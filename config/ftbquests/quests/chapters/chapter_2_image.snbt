@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 3
 	filename: "chapter_2_image"
-	title: "Chapter 2 \"Image\""
+	title: "第二章 \"指导图\""
 	icon: "minecraft:painting"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
