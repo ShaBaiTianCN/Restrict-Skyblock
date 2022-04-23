@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 6
 	filename: "final_item"
-	title: "FINAL ITEM"
+	title: "最终物品"
 	icon: "good_nights_sleep:present"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -13,7 +13,7 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["I hope you've been building up your automation as you went.  Your final key comes in exchange for a very special present. Go unlock the last sphere and take a well deserved nap."]
+			description: ["我希望当你到这的时候你已经建立好了你的自动化系统。最终钥匙由一份特别的礼物换取。去解锁最后一个房间，祝好梦。"]
 			dependencies: [
 				"0B006B73153149BC"
 				"078022FC39E8A5C3"
@@ -50,7 +50,7 @@
 			x: -2.5d
 			y: -4.0d
 			shape: "octagon"
-			description: ["This is the first of 15 different items you will need to make for my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是制作礼物所需要的15种物品中的第一个。虽然不怎么费时间，但是还是建议自动化生产这些材料。"]
 			id: "7DFCCF404094571C"
 			tasks: [{
 				id: "5EE45ADAEE5856A3"
