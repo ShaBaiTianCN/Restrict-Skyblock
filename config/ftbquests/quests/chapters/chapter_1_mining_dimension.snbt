@@ -1,0 +1,1228 @@
+{
+	id: "58C9279154D83B5A"
+	group: ""
+	order_index: 0
+	filename: "chapter_1_mining_dimension"
+	title: "Chapter 1 \"Mining Dimension\""
+	icon: "mining_dimension:teleporter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 1.0d
+		y: -2.5d
+		width: 5.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "modpack:textures/loot_miningblock.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: 6.5d
+			y: -6.5d
+			description: ["Botania is a very expansive tech themed magic mod full of lovely flowers.  For now we're just going to scratch the surface and to do that you need some Floral fertilizer made of bonemeal and red dye."]
+			dependencies: ["5BFEAE583573EE37"]
+			id: "7FBA2A2906136819"
+			tasks: [{
+				id: "2817DF4534891172"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+			rewards: [
+				{
+					id: "0EAB9DF4B404C684"
+					type: "item"
+					item: "botania:flower_bag"
+				}
+				{
+					id: "5882A3BCFC047342"
+					type: "item"
+					item: "botania:pestle_and_mortar"
+				}
+				{
+					id: "50949EE3AEF13AAB"
+					type: "item"
+					item: "botania:lexicon"
+				}
+				{
+					id: "38D0CE05359176E0"
+					type: "item"
+					item: {
+						id: "minecraft:shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "White Mystical Flower"
+			x: 8.0d
+			y: -6.5d
+			description: ["Using that fertilizer on grass will grow three or four random mystical flowers.   There are 16 colors each used for different recipes.  The one we need now is White.  NOTE: Now that you have mystical flowers you can crush their petals with the Pestle and Mortar to make dyes."]
+			dependencies: ["7FBA2A2906136819"]
+			id: "1C52F8E7402C44B0"
+			tasks: [{
+				id: "4095EDD02EEB2EDA"
+				type: "item"
+				item: "botania:white_mystical_flower"
+			}]
+			rewards: [{
+				id: "5AF5175E6A0EAE65"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -6.5d
+			description: ["Most of the useful flowers get crafted by throwing the materials into the water filled petal apothecary."]
+			dependencies: ["7395D4C17D0D69E6"]
+			id: "085231CFCB736C50"
+			tasks: [{
+				id: "6DDD40B36E82B28E"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+			rewards: [{
+				id: "25F189F8263F5CFD"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "I`m not Daisy Duck"
+			x: 12.5d
+			y: -6.5d
+			description: ["Make your first functional flower by filling the petal apothecary with water then tossing in 4 white petals.  If the recipe is valid you will see an image of the flower. Toss in a wheat seed to complete it and get your flower!"]
+			dependencies: ["085231CFCB736C50"]
+			id: "6FE6147FE00D1BB3"
+			tasks: [{
+				id: "7B5CEBE7562A1179"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+			rewards: [
+				{
+					id: "61DE1401F30412CC"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "4889B410BFAAA7A6"
+					type: "item"
+					item: "botania:pure_daisy"
+				}
+			]
+		}
+		{
+			title: "Convert"
+			x: 14.0d
+			y: -6.5d
+			description: ["Place the Pure Daisy in the world and it will slowly convert the 8 blocks around it.  Stone converts to livingrock and logs convert to livingwood.  There are a few other conversions but these are all you need for now."]
+			dependencies: ["6FE6147FE00D1BB3"]
+			id: "3A813C905CC2FAFE"
+			tasks: [
+				{
+					id: "7475B2B0EB8EC705"
+					type: "item"
+					item: "botania:livingrock"
+					count: 16L
+				}
+				{
+					id: "16CBBDFFFCF73FED"
+					type: "item"
+					item: "botania:livingwood"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "01BEDADD95641D38"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -6.5d
+			shape: "hexagon"
+			description: ["This key is pretty simple: make me a Livingrock Brick."]
+			dependencies: ["3A813C905CC2FAFE"]
+			id: "5DC00DC564F1266B"
+			tasks: [{
+				id: "2C4C6C5024B697F9"
+				type: "item"
+				item: "botania:livingrock_bricks"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "181D61057D550DD0"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "0821BD19657DD58D"
+					type: "item"
+					item: "minecraft:torch"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "Black Dye"
+			x: 9.5d
+			y: -5.0d
+			description: ["You were probably unsually excited when you finally got to make that basic crafting bench.  Time to upgrade it.  If you haven't gotten a Black Mystical Flower yet you might want to do that first.  But, feel free to make a squid farm for the dye if you like doing things the hard way."]
+			dependencies: ["7FBA2A2906136819"]
+			id: "107C2AD02FC20A28"
+			tasks: [{
+				id: "7A71B3179A26F8BE"
+				type: "item"
+				item: "minecraft:black_dye"
+				count: 19L
+			}]
+			rewards: [{
+				id: "420453BCFD315109"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Extended Crafting"
+			x: 11.0d
+			y: -5.0d
+			description: ["Extended Crafting adds special crafting tables that go beyond the typical 3x3 grid but the basic table will be enough for now."]
+			dependencies: ["107C2AD02FC20A28"]
+			id: "546B73272169D585"
+			tasks: [
+				{
+					id: "3E015CDB1FD5ED97"
+					type: "item"
+					item: "extendedcrafting:black_iron_ingot"
+					count: 19L
+				}
+				{
+					id: "6A2368A9435D5045"
+					type: "item"
+					item: "extendedcrafting:luminessence"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "5D3C30DD5DA93AA5"
+				type: "item"
+				item: "coins:coin"
+				count: 2
+			}]
+		}
+		{
+			x: 12.5d
+			y: -5.0d
+			description: ["I know it's still only 3x3 but this tool you're making here is far from basic so you do need this special crafting table."]
+			dependencies: ["546B73272169D585"]
+			id: "4BF32681611AC8BE"
+			tasks: [{
+				id: "43CEE6893B46D751"
+				type: "item"
+				item: "extendedcrafting:basic_table"
+			}]
+			rewards: [{
+				id: "6206C547B3D8D328"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Barbecue on a Stick"
+			x: 14.0d
+			y: -5.0d
+			description: ["This will make a fantastic handle.  Don't think too hard about it."]
+			dependencies: ["4BF32681611AC8BE"]
+			id: "087AC1B28D317B4E"
+			tasks: [{
+				id: "1D4819AB9008D052"
+				type: "item"
+				item: "farmersdelight:barbecue_stick"
+				count: 2L
+			}]
+			rewards: [{
+				id: "400F332662DE79B2"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -5.0d
+			shape: "hexagon"
+			description: ["Use JEI to see how to make the Mattock.  Don't question my methods. Just make it for me. As a gift you get an even better pickaxe."]
+			dependencies: [
+				"087AC1B28D317B4E"
+				"5DC00DC564F1266B"
+				"780D190EE63444CF"
+			]
+			id: "0528D0A23CF114E8"
+			tasks: [{
+				id: "26D8C23167BC0087"
+				type: "item"
+				item: {
+					id: "cyclic:mattock"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "13FC949D9F0C6AD3"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "7921F10C4233C96D"
+					type: "item"
+					item: {
+						id: "cyclic:storage_bag"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							Parent: {
+								Size: 81
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "711763F7A7FF599A"
+					type: "item"
+					item: {
+						id: "cyclic:mattock_nether"
+						Count: 1b
+						tag: {
+							Damage: 16
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Coke Oven"
+			x: 8.0d
+			y: -3.5d
+			description: ["Gather Sandstone x9, Clay x36, Brick x36 and make yourself some Coke Bricks. You're making a coke oven next."]
+			hide_dependency_lines: true
+			dependencies: ["7FBA2A2906136819"]
+			id: "6A82515E757159AE"
+			tasks: [{
+				id: "186F8F47E3D374D4"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "148395C145E47F72"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+		}
+		{
+			title: "Creosote Oil"
+			x: 15.5d
+			y: -3.5d
+			shape: "hexagon"
+			description: ["You get creosote as a byproduct of the coke oven's processes.  Right now you don't have access to coal to make coal coke so make charcoal out of logs in it instead."]
+			dependencies: ["2560D8535298958A"]
+			id: "780D190EE63444CF"
+			tasks: [{
+				id: "76549536103B8389"
+				type: "item"
+				item: "immersiveengineering:creosote_bucket"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "1E9DCDCAAC0DD824"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "09A7272F2E9F9564"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_pickaxe"
+						Count: 1b
+						tag: {
+							RepairCost: 3
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5s
+									id: "minecraft:efficiency"
+								}
+								{
+									lvl: 3s
+									id: "minecraft:unbreaking"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "SumSum"
+			x: 8.0d
+			y: -2.0d
+			description: ["Get some bee spawn eggs from the market and craft a beehive.  Bees will seek out flowers and then return to the hive to work for a while increasing the honey level each time.  It would be smart to enclose your hive as the bees have a tendency to wander off."]
+			hide_dependency_lines: true
+			dependencies: ["7FBA2A2906136819"]
+			id: "62138D3629083F80"
+			tasks: [
+				{
+					id: "725703E2E98546DE"
+					type: "item"
+					item: "minecraft:bee_spawn_egg"
+				}
+				{
+					id: "391C1C09C240097C"
+					type: "item"
+					item: "minecraft:beehive"
+				}
+			]
+			rewards: [
+				{
+					id: "42C5A268539B2AAA"
+					type: "item"
+					item: "minecraft:cornflower"
+					count: 3
+				}
+				{
+					id: "23879CE768CD3CFC"
+					type: "item"
+					item: "minecraft:dandelion"
+					count: 3
+				}
+				{
+					id: "44099B04AB5E15A9"
+					type: "item"
+					item: "minecraft:rose_bush"
+					count: 3
+				}
+				{
+					id: "2363B69FF337C3F4"
+					type: "item"
+					item: "minecraft:bee_spawn_egg"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			description: ["When the beehive has a honey level of 5 you can see the honey and it's time to harvest.  Use a bottle on the hive for honey or shears for honeycomb."]
+			dependencies: ["62138D3629083F80"]
+			id: "6C0F0AC2DC6DB64B"
+			tasks: [{
+				id: "7FFD0284FA7B6723"
+				type: "item"
+				item: "minecraft:honey_bottle"
+			}]
+			rewards: [
+				{
+					id: "7EEAF81604CFC003"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4D9BB77B85253C5B"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "21C3CB2EEE4C1B0F"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Cooking"
+			x: 12.0d
+			y: -2.0d
+			description: ["Farmer's Delight adds a few new ingredients and a lot of new variety for your diet. Many of the recipes are prepared in the Cooking Pot placed over a Campfire or Stove. Add the necessary ingredients and it will begin cooking. Some recipes require bowls or other items to serve so keep some available when cooking."]
+			dependencies: ["6C0F0AC2DC6DB64B"]
+			id: "48523EEF46383DD3"
+			tasks: [{
+				id: "52E1DE4C5164CAA2"
+				type: "item"
+				item: "farmersdelight:cooking_pot"
+			}]
+			rewards: [
+				{
+					id: "5C4AA42E9D60CB8D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4B213AB6A7A4D8AE"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: -2.0d
+			description: ["Your world is a little small right now so you will have to culture your own mushrooms instead of foraging for them."]
+			dependencies: ["48523EEF46383DD3"]
+			id: "14357143D9649B7A"
+			tasks: [{
+				id: "5C0E77C3A335799D"
+				type: "item"
+				item: "farmersdelight:brown_mushroom_colony"
+			}]
+			rewards: [{
+				id: "458DD5BEF5EEF0DE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Stuffed Pumpkin"
+			x: 15.5d
+			y: -2.0d
+			shape: "hexagon"
+			description: ["Feasts are big meals for sharing.  Once you've prepared the Stuffed Pumpkin place it in the world and right click on it with a bowl to take a serving. I've gotten hungry waiting for you so I'll take all 4 servings and the cookie is for dessert. Thank you!"]
+			dependencies: ["14357143D9649B7A"]
+			id: "6A20A5F4CC69C2BF"
+			tasks: [
+				{
+					id: "5A3F214C8789366F"
+					type: "item"
+					item: "farmersdelight:stuffed_pumpkin_block"
+				}
+				{
+					id: "576685597579EDEF"
+					type: "item"
+					item: "farmersdelight:stuffed_pumpkin"
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "10051993DE500B4A"
+					type: "item"
+					item: "farmersdelight:honey_cookie"
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "6099D164C6E174EF"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Mining Dimension"
+			icon: "mining_dimension:teleporter"
+			x: 18.0d
+			y: -4.0d
+			shape: "diamond"
+			description: ["Now that you've prepared your supplies I've got the key you need. Find the sphere with the door that matches your key and place the key into the item frame on the door. There you'll find access to the Mining Dimension.  Go bring back some resources so that we can get started on the next set of keys."]
+			dependencies: [
+				"0528D0A23CF114E8"
+				"6A20A5F4CC69C2BF"
+				"780D190EE63444CF"
+				"5DC00DC564F1266B"
+			]
+			size: 2.0d
+			id: "70F522DE6A0D859A"
+			tasks: [{
+				id: "003D435F7849E975"
+				type: "checkmark"
+				title: "Find the Spruce"
+			}]
+			rewards: [{
+				id: "06B8A9F82420CE99"
+				type: "item"
+				item: "kubejs:mining_key"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 1.5d
+			shape: "octagon"
+			description: ["This is the first of 15 different items you will need to make for my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["7FBA2A2906136819"]
+			size: 3.0d
+			id: "34506BE798DC19D3"
+			tasks: [{
+				id: "47F57101DE90D744"
+				type: "item"
+				item: "good_nights_sleep:negatite_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "1DF00447E24FB8A6"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Automation Honey Production"
+			icon: "minecraft:observer"
+			x: 10.0d
+			y: -0.5d
+			description: ["There's an image in your questbook that suggests one possible way to automate your honey production.  Note: This design spits out bottles even when the hive is not full so be sure to collect them and return them to the dispenser."]
+			dependencies: ["6C0F0AC2DC6DB64B"]
+			id: "52549FA719C15D24"
+			tasks: [
+				{
+					id: "390EA9F91456D8C2"
+					type: "item"
+					item: "minecraft:observer"
+					count: 2L
+				}
+				{
+					id: "413FBE6A1BB07D4D"
+					type: "item"
+					item: "cyclic:collector"
+				}
+				{
+					id: "0A5B8F8448EED500"
+					type: "item"
+					item: "minecraft:dispenser"
+				}
+				{
+					id: "749EE0294A3DDED7"
+					type: "item"
+					item: "minecraft:glass_bottle"
+					count: 30L
+				}
+			]
+			rewards: [{
+				id: "315CC7DE737AE350"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Welcome"
+			icon: "minecraft:nether_star"
+			x: 1.0d
+			y: -9.0d
+			shape: "gear"
+			description: ["Welcome to Restrict Skyblock! This modpack completely changes the way you will get started in this world and progress to the different dimensions aiming for a new but not grindy progression. The questbook is accessible at all times in the upper left corner of the inventory screen and it is there to help you find your way."]
+			size: 2.0d
+			id: "3B6D2237E53F2CD6"
+			tasks: [{
+				id: "49EDD447F095F69B"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "545E47B5DE3B4B1E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "582B6A6CC889A424"
+					type: "item"
+					item: "minecraft:spruce_sapling"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Mining"
+			icon: "oneblock:obmaker"
+			x: 1.0d
+			y: -5.0d
+			description: ["Instead of the usual tree punching to get started I've given you a magically self renewing block to punch instead.  Find the OBMaker inside your chest and right click it on a block in the world to turn it into your OneBlock.  This can't be moved once placed."]
+			dependencies: [
+				"0CAD397599E7C2A9"
+				"767E2E910DA4C6CA"
+			]
+			id: "7C2E1C22BA7FDD2B"
+			tasks: [
+				{
+					id: "2CF8A9775AB80A25"
+					type: "item"
+					item: "minecraft:flint"
+					count: 2L
+				}
+				{
+					id: "5043A779C0327909"
+					type: "item"
+					item: "minecraft:oak_slab"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "2A18BC22E431E26D"
+				type: "item"
+				item: "minecraft:chest"
+				count: 4
+			}]
+		}
+		{
+			title: "Goals"
+			icon: "good_nights_sleep:present"
+			x: -1.0d
+			y: -7.0d
+			description: ["The point of it all: Make me a Present. A particular Present. If you look around you can see some islands off in the distance. Three of those have gateways to other dimensions that you will unlock by making certain items and fluids for me. Travelling to each dimension will grant you access to more and more varied resources and allow you to start making what you need to make my present. Let's begin!"]
+			dependencies: ["3B6D2237E53F2CD6"]
+			id: "767E2E910DA4C6CA"
+			tasks: [{
+				id: "0E0DA5C637A65588"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6115BB877E026E0A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Allies"
+			icon: "powah:charged_snowball"
+			x: 3.0d
+			y: -7.0d
+			description: ["Just Enough Items (JEI) is every modded Minecraft player's best ally. Search for nearly everything in the game and either left click to see how it's made or right click to see how it's used. The tabs above the recipes indicate different uses/recipes depending on the machine being used.  Press the 'A' key while hovering over any item to save that item to a list on the left side of the screen for easy access (hover and press 'A' over the item in the list to remove)."]
+			dependencies: ["3B6D2237E53F2CD6"]
+			id: "0CAD397599E7C2A9"
+			tasks: [{
+				id: "634A8A9771A0EA3D"
+				type: "checkmark"
+				title: "your best ally"
+			}]
+			rewards: [{
+				id: "1CF8FC89EA8B72FF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			description: ["By now you may have noticed that you can't make the crafting bench.  That's okay because we have pretty special water around here.  Try throwing stuff in it and see what happens.  Or, I suppose you could look up how to use Water in JEI... Note: right click on Water, not Water Bucket to see the Fluid to Item recipes."]
+			dependencies: ["7C2E1C22BA7FDD2B"]
+			id: "3D67662F3AC7E879"
+			tasks: [{
+				id: "751DC43B27ACA116"
+				type: "item"
+				item: "ceramicbucket:unfired_clay_bucket"
+			}]
+			rewards: [{
+				id: "2F8CCE4FCA1D9A59"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			description: ["Eating a wide variety of foods will increase your health pool.  When you start to get hungry you might want to make a cutting board and flint knife.  Using those will make your food supplies last longer and the bonemeal byproduct will be needed later."]
+			dependencies: ["7C2E1C22BA7FDD2B"]
+			id: "33E301A0D405E2E8"
+			tasks: [
+				{
+					id: "057D89DAEFECA629"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "5ABB03098A0E1D6E"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "312D711877C34663"
+					type: "item"
+					item: "minecraft:cod"
+					count: 32
+				}
+				{
+					id: "3522F3D9E31E8F26"
+					type: "item"
+					item: "minecraft:salmon"
+					count: 32
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			description: ["That Clay bucket isn't good for anything as it is but you can't make a furnace without the crafting table.  I suppose you will need to go primitive and use a campfire for now."]
+			dependencies: ["3D67662F3AC7E879"]
+			id: "7A464B80989521C2"
+			tasks: [{
+				id: "0C70177CD1D62CFC"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+			rewards: [{
+				id: "69F6F06F238A654B"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			description: ["Are you ready for a real crafting bench yet? I know you can't make red dye yet for the wool but if you look around you there should be a lovely red tulip you can use. **WARNING** Bonemeal on grass won't generate flowers on a new island until after a server restart. "]
+			dependencies: ["7A464B80989521C2"]
+			id: "26A5DFB2E0DC95FB"
+			tasks: [{
+				id: "7EFE6924E5E6D004"
+				type: "item"
+				item: "farmingforblockheads:market"
+			}]
+			rewards: [{
+				id: "3B0EABEE491F60E8"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Oak Log"
+			x: 1.0d
+			y: -0.5d
+			description: ["You just unlocked the path to untold riches and glory!  Well, maybe not, but here's where the bonemeal comes in: use it to buy yourself seeds and saplings and get that oak tree growing."]
+			dependencies: ["26A5DFB2E0DC95FB"]
+			id: "41B3842036C011A0"
+			tasks: [{
+				id: "43845411DD379133"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 4L
+			}]
+			rewards: [{
+				id: "71F2451D70C7BD4C"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 64
+			}]
+		}
+		{
+			title: "Sweet Dreams"
+			icon: "minecraft:white_bed"
+			x: 4.0d
+			y: -5.0d
+			description: ["This is Minecraft, mobs will spawn at night.  You can hunt them, light up your island so you can't tell day from night, or you can sleep the night away."]
+			dependencies: ["33E301A0D405E2E8"]
+			hide: true
+			hide_text_until_complete: false
+			id: "173287DE62C5EBE1"
+			tasks: [{
+				id: "6E43BE1C8FAA4662"
+				type: "item"
+				item: "minecraft:white_bed"
+			}]
+			rewards: [
+				{
+					id: "74B7335B94ACBF52"
+					type: "item"
+					item: "waystones:waystone"
+				}
+				{
+					id: "2454B87EB2832116"
+					type: "item"
+					item: "minecraft:torch"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Hopper Botany Pot"
+			x: 4.0d
+			y: 1.0d
+			description: ["Farming the traditional way works just fine up here, but it does take up an awful lot of time and space.  It would be convenient if you could just set some pots on a containter and be able to work on other things while your storage fills up."]
+			dependencies: ["41B3842036C011A0"]
+			id: "7C64EF242FA6EBA7"
+			tasks: [{
+				id: "63B2473F60F8D304"
+				type: "item"
+				item: "botanypots:hopper_botany_pot"
+				count: 6L
+			}]
+			rewards: [
+				{
+					id: "3849EC715102FD18"
+					type: "item"
+					item: "mysticalagriculture:inferium_farmland"
+					count: 12
+				}
+				{
+					id: "1A9D42FD22F505AA"
+					type: "item"
+					item: "endercrop:tilled_end_stone"
+				}
+				{
+					id: "37EB49A369233B72"
+					type: "item"
+					item: "endercrop:ender_seeds"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			description: ["Mystical Agriculture allows you to grow your resources and make customizable armor and tools.  It takes an awful lot of inferium though so I recommend getting your inferium supply established now. You can get some from killing or your OneBlock generator to get started."]
+			dependencies: ["7C64EF242FA6EBA7"]
+			id: "0BAB3360C3B7155E"
+			tasks: [{
+				id: "1A7132A5A5ABD83B"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+			}]
+			rewards: [{
+				id: "1163144CF8B0A017"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "mysticalagriculture:guide"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			description: ["By now you've been punching that OneBlock for quite a while. Maybe you even started using a shovel on it, tools help! But wouldn't it be nice if you didn't have to?"]
+			dependencies: ["41B3842036C011A0"]
+			id: "2441BE4BCDA6512D"
+			tasks: [{
+				id: "4DE68C0FEF4F0A6C"
+				type: "item"
+				item: "craftingstation:crafting_station"
+			}]
+			rewards: [{
+				id: "0A7B2B853F7A9DEC"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Automation"
+			icon: "oneblock:ex_nihilo"
+			x: 6.5d
+			y: -0.5d
+			description: ["With the help of some simple hoppers and high tech machines your days of block punching can be over. Craft the generator, place the hopper underneath it, put the catalysts you just received inside the generators and revel in the simplicity of your first resource automation."]
+			dependencies: ["2441BE4BCDA6512D"]
+			id: "67B5F238E3F101E3"
+			tasks: [
+				{
+					id: "1B6E5636CF71B1F8"
+					type: "item"
+					item: "oneblock:ex_nihilo"
+					count: 2L
+				}
+				{
+					id: "4C63D08D4BC8913B"
+					type: "item"
+					item: "woodenhopper:wooden_hopper"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "1A982233CA777215"
+					type: "item"
+					item: {
+						id: "oneblock:nihilo_catalyst"
+						Count: 1b
+						tag: {
+							oblevel: 0
+						}
+					}
+				}
+				{
+					id: "1D4BD442CEDFC8FB"
+					type: "item"
+					item: {
+						id: "oneblock:nihilo_catalyst"
+						Count: 1b
+						tag: {
+							oblevel: 500000
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Smelting"
+			icon: "minecraft:iron_ingot"
+			x: 6.5d
+			y: -2.0d
+			description: ["Once your generators have been running for a bit these will be abundant but redstone is still a ways off.  Here's a little to hold you over until you can get your own.  Note: If you waste some and need more redstone than you have to progress there is an emergency supply on the right side of the questbook."]
+			dependencies: ["67B5F238E3F101E3"]
+			id: "7337CCD2AD26072E"
+			tasks: [
+				{
+					id: "7DF8197E59EC5D2F"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8L
+				}
+				{
+					id: "2659A0F8BF0B6A66"
+					type: "item"
+					item: "minecraft:stone"
+					count: 16L
+				}
+				{
+					id: "51B213D0BC0F1BCF"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "2662938C853EBA69"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 32
+				}
+				{
+					id: "6C9E585EDE8F2F3F"
+					type: "item"
+					item: {
+						id: "tiab:timeinabottle"
+						Count: 1b
+						tag: {
+							timeData: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "pipez:item_pipe"
+			x: 6.5d
+			y: -3.5d
+			description: ["Pipes will help you with automating and connecting your resource generators to your central storage."]
+			hide_dependency_lines: false
+			dependencies: ["7337CCD2AD26072E"]
+			id: "1302C391B7FBEF10"
+			tasks: [
+				{
+					id: "472FBE540A952E5F"
+					type: "item"
+					item: "pipez:item_pipe"
+					count: 16L
+				}
+				{
+					id: "22C35552F5D76B15"
+					type: "item"
+					item: "pipez:wrench"
+				}
+			]
+			rewards: [{
+				id: "6BACBA35C6BFF1A9"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			icon: "storagedrawers:controller"
+			x: 6.5d
+			y: -5.0d
+			description: ["A nice and tidy Storage Drawer system will help you keep the chest monsters away now that the resources are flowing in."]
+			dependencies: ["1302C391B7FBEF10"]
+			id: "5BFEAE583573EE37"
+			tasks: [
+				{
+					id: "4D9C23744C2F774C"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+				{
+					id: "47C83DEDFF0CFB94"
+					type: "item"
+					title: "Any #storagedrawers:drawers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "storagedrawers:drawers"
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "77929AF1B91CE9C6"
+					type: "item"
+					item: "storagedrawers:drawer_key"
+				}
+			]
+			rewards: [
+				{
+					id: "7DC41DEC9604BD72"
+					type: "item"
+					item: "storagedrawers:quantify_key"
+				}
+				{
+					id: "3B987A5713F17F59"
+					type: "item"
+					item: "storagedrawers:compacting_drawers_3"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Feeding Trough"
+			icon: "farmingforblockheads:feeding_trough"
+			x: 1.0d
+			y: 1.0d
+			description: ["Feeding troughs filled with carrots, wheat, and seeds will feed the animals around them helping your livestock multiply with minimal input from you.  The chicken nest collects eggs around it and a hopper or pipe can funnel the collected eggs into storage."]
+			dependencies: ["41B3842036C011A0"]
+			id: "67A6AD450B3E826E"
+			tasks: [
+				{
+					id: "749A425F96B8D8DE"
+					type: "item"
+					item: "farmingforblockheads:feeding_trough"
+					count: 3L
+				}
+				{
+					id: "5CDD878453EF37A7"
+					type: "item"
+					item: "farmingforblockheads:chicken_nest"
+				}
+			]
+			rewards: [{
+				id: "2A58313BB1990547"
+				type: "item"
+				item: "coins:coin"
+				count: 4
+			}]
+		}
+		{
+			icon: {
+				id: "ceramicbucket:ceramic_milk_bucket"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "minecraft:milk"
+						Amount: 1000
+					}
+				}
+			}
+			x: -2.0d
+			y: 1.0d
+			description: ["If you punched your one block long enough you may have gotten it to spawn some animals for you.  Spawn eggs are available at the market to fill out your breeding pairs. NOTE: Killing animals with the flint knife vastly improves the rates for secondary drops like leather and ham."]
+			dependencies: ["67A6AD450B3E826E"]
+			id: "5475DBEB355577BB"
+			tasks: [
+				{
+					id: "777014ECFA38CF3B"
+					type: "item"
+					item: {
+						id: "ceramicbucket:ceramic_milk_bucket"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "minecraft:milk"
+								Amount: 1000
+							}
+						}
+					}
+				}
+				{
+					id: "618F768EA861F0A7"
+					type: "item"
+					item: "minecraft:egg"
+					count: 8L
+				}
+				{
+					id: "10E8A5774015B11D"
+					type: "item"
+					item: "minecraft:white_wool"
+					count: 8L
+				}
+				{
+					id: "6CC3F61BCF84E01C"
+					type: "item"
+					item: "farmersdelight:ham"
+				}
+			]
+		}
+		{
+			title: "Mystical White Petal"
+			x: 9.5d
+			y: -6.5d
+			description: ["Once you've found a mystical flower you can make all the petals you need.  Right click a petal on dirt or grass for a subtle sparkle effect.  Using bonemeal on that sparkle will grow a tall mystical flower.  Harvest the flower with shears and break it down into 4 petals."]
+			dependencies: ["1C52F8E7402C44B0"]
+			id: "7395D4C17D0D69E6"
+			tasks: [{
+				id: "05DE05070F336D6C"
+				type: "item"
+				item: "botania:white_petal"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "2DC509F1F6993E0D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "480149F656C3A57C"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: -3.5d
+			description: ["Build a 3x3x3 cube in the world out of Coke Bricks and whack the center block on any side with the Engineer's Hammer to form the multiblock structure."]
+			dependencies: ["6A82515E757159AE"]
+			id: "2560D8535298958A"
+			tasks: [{
+				id: "4FDD94716C3459B2"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7DB430335B55E4FD"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+	]
+}

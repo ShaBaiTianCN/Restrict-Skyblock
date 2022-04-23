@@ -1,0 +1,1263 @@
+{
+	id: "4AEABFDFF0E8534A"
+	group: ""
+	order_index: 2
+	filename: "chapter_2_nether_dimension"
+	title: "Chapter 2 \"Nether Dimension\""
+	icon: "minecraft:crying_obsidian"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Mining Tour"
+			x: -34.5d
+			y: -3.0d
+			shape: "octagon"
+			description: [
+				"How did it feel it to be digging deep underground after being up in the sky for so long?  Your next goals involve establishing automation with Mystical Agriculture and Pedestals so that you don't need to keep going on mining expeditions."
+				"I've got some stuff from Simple Storage as reward to help you stay organized."
+			]
+			dependencies: ["70F522DE6A0D859A"]
+			hide: true
+			size: 1.5d
+			id: "56837C137A4EF95E"
+			tasks: [{
+				id: "58DB52FF7728607B"
+				type: "checkmark"
+				icon: {
+					id: "cyclic:mattock"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6316AB6CF5620357"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1CF9F55EE5716E14"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "storagenetwork:network_book"
+						}
+					}
+				}
+				{
+					id: "3436F679149A3F2F"
+					type: "item"
+					item: "storagenetwork:master"
+				}
+				{
+					id: "0A1F109EF04E6C40"
+					type: "item"
+					item: "minecraft:enchanting_table"
+				}
+			]
+		}
+		{
+			icon: "mysticalagriculture:inferium_seeds"
+			x: -24.5d
+			y: 1.0d
+			description: ["Inferium seeds are the primary way to get the essences you need.  They can be grown on any farmland but infusing the farmland with higher tiers of essence helps your plants grow faster."]
+			dependencies: ["036630BB8E2F1AB3"]
+			id: "7DDF2C067830FCA9"
+			tasks: [{
+				id: "1CA03E8DC7A90C6F"
+				type: "item"
+				item: "mysticalagriculture:inferium_seeds"
+			}]
+			rewards: [
+				{
+					id: "2C878FC9BA8DE0EB"
+					type: "item"
+					item: "mysticalagriculture:supremium_farmland"
+					count: 16
+				}
+				{
+					id: "0B37F87C24C34668"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -27.0d
+			y: -2.0d
+			description: ["Hopefully you have a steady supply of Inferium growing because it's time to start using it.  Mystical Agriculture allows you to grow a wide variety of materials and drops once you've gathered a few to infuse into a special seed.  You use the infusion crystal to condense your inferium to make higher level materials.  Prosperity Seed Base is the beginning of all of your resource crops, make a few to get started."]
+			dependencies: ["56837C137A4EF95E"]
+			id: "036630BB8E2F1AB3"
+			tasks: [
+				{
+					id: "48D5DDAA64635B9B"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:infusion_crystal"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0142077477AC51B6"
+					type: "item"
+					item: "mysticalagriculture:prosperity_seed_base"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "41C89FF3C89DFAA0"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "12D9CF2344EC25D3"
+					type: "item"
+					item: "mysticalagriculture:prosperity_shard"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -27.0d
+			y: 0.0d
+			shape: "circle"
+			description: ["Place the Infusion Altar in the world and you'll see 8 ghost images around it indicating where to place the Infusion Pedestals. Place the seed base on the altar and the infusion materials on the pedestals (order does not matter) then give the altar a redstone signal to begin the infusion."]
+			dependencies: ["036630BB8E2F1AB3"]
+			id: "4CC327262B75278F"
+			tasks: [
+				{
+					id: "22F45B751CC2E9D3"
+					type: "item"
+					item: "mysticalagriculture:infusion_altar"
+				}
+				{
+					id: "57BCD0222DE6E4C1"
+					type: "item"
+					item: "mysticalagriculture:infusion_pedestal"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "41A479B4E0FBA006"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Tier 1 Seeds"
+			x: -27.0d
+			y: 1.8d
+			shape: "octagon"
+			description: ["Basic Tier 1 seeds include common resources and elemental essences."]
+			dependencies: ["4CC327262B75278F"]
+			id: "67EF84AEBED2AFC3"
+			tasks: [
+				{
+					id: "720C52F87A92D6F5"
+					type: "item"
+					item: "mysticalagriculture:wood_seeds"
+				}
+				{
+					id: "15E995B1C43C82E7"
+					type: "item"
+					item: "mysticalagriculture:stone_seeds"
+				}
+				{
+					id: "30596750945EC5CB"
+					type: "item"
+					item: "mysticalagriculture:dirt_seeds"
+				}
+				{
+					id: "0209293000DE1A60"
+					type: "item"
+					item: "mysticalagriculture:water_seeds"
+				}
+				{
+					id: "2E1DCF490B176D6C"
+					type: "item"
+					item: "mysticalagriculture:fire_seeds"
+				}
+				{
+					id: "42B65E1A37B28F46"
+					type: "item"
+					item: "mysticalagriculture:earth_seeds"
+				}
+			]
+			rewards: [
+				{
+					id: "1BC3DAF9342C8B6B"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "0443D8CF470741A5"
+					type: "item"
+					item: "mysticalagriculture:prosperity_seed_base"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Tier 3 Seeds"
+			x: -27.0d
+			y: 5.4d
+			shape: "octagon"
+			description: ["Iron and redstone can be yours in abundance once you begin crafting Tier 3 seeds."]
+			dependencies: ["0B2AA190F2D1DC90"]
+			id: "74B9FFF2BD24E6DD"
+			tasks: [
+				{
+					id: "7182C4DE25D85349"
+					type: "item"
+					item: "mysticalagriculture:iron_seeds"
+				}
+				{
+					id: "2754BC7B727A55BE"
+					type: "item"
+					item: "mysticalagriculture:redstone_seeds"
+				}
+			]
+			rewards: [{
+				id: "484336D343F2E072"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -37.0d
+			y: 0.0d
+			description: ["The Botanist's basic tool is the Wand of the Forest.  Use it to link your flowers and spreaders and shift right click in the air to change its function so you can see up to date status of your mana systems."]
+			dependencies: ["56837C137A4EF95E"]
+			id: "58D4CCE814BF0661"
+			tasks: [{
+				id: "6F4D5C94BFA6C6DF"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7662DED331C9A829"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7CF69F3DCB05F577"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			title: "Endoflame"
+			x: -37.0d
+			y: 1.5d
+			description: ["The endoflame is a good place to start for mana generation.  It consumes any fuel type items in a 7x7x7 area around it and burns it to generate mana."]
+			dependencies: ["58D4CCE814BF0661"]
+			id: "6EFA0E3398F1F0FA"
+			tasks: [{
+				id: "4D19C97BB3BBDFB1"
+				type: "item"
+				item: "botania:endoflame"
+				count: 6L
+			}]
+			rewards: [
+				{
+					id: "3892FDAD43FA64ED"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2704D20F51AAE904"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			x: -37.0d
+			y: 3.0d
+			description: ["Mana Spreaders collect the mana from your generating flowers and transfer it to and from mana pools so that your functioning flora have the mana they need."]
+			dependencies: ["6EFA0E3398F1F0FA"]
+			id: "7BB75D86EFAC2095"
+			tasks: [
+				{
+					id: "695D6D754259C55F"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "58E62A9940F3B066"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+			]
+			rewards: [
+				{
+					id: "3B38C61F017ADCD0"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 16
+				}
+				{
+					id: "6123E0258168CBED"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 8
+				}
+				{
+					id: "2CD40B4B015D7346"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Mana Items"
+			x: -37.0d
+			y: 6.0d
+			description: ["Once you have some mana in a pool you can infuse that mana into some basic materials you will use throughout your crafting in Botania."]
+			dependencies: ["25753015E92D2DD1"]
+			id: "2709F0E3B7E2652C"
+			tasks: [
+				{
+					id: "7C56838C8E581C16"
+					type: "item"
+					icon: "botania:manasteel_ingot"
+					item: "botania:manasteel_ingot"
+					count: 8L
+				}
+				{
+					id: "62DE182089AAF8CC"
+					type: "item"
+					item: "botania:mana_pearl"
+					count: 8L
+				}
+				{
+					id: "7B9EA89D963DD1EE"
+					type: "item"
+					item: "botania:mana_diamond"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "157FD5683FD35DAA"
+					type: "item"
+					item: {
+						id: "botania:mana_tablet"
+						Count: 1b
+						tag: {
+							mana: 500000
+						}
+					}
+				}
+				{
+					id: "00665FD2BBE99C07"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			x: -37.0d
+			y: 7.5d
+			description: ["The more powerful mana generating flowers and many functional flowers use runes to craft.  Supply mana to the Runic Altar by directing a mana spreader with a source of mana to it. NOTE: Runes used at the altar to create more advanced runes are NOT consumed while runes used to create flowers in the petal apothecary ARE consumed."]
+			dependencies: ["2709F0E3B7E2652C"]
+			id: "328B82259E40EBCC"
+			tasks: [{
+				id: "18EA0392C34BFE43"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [{
+				id: "2B80E60257906EF5"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Rune of Water"
+			x: -37.0d
+			y: 9.0d
+			shape: "hexagon"
+			description: ["Imagine you're preparing for the nether by infusing yourself with the energy of water. Craft runes by dropping the required ingredients on the altar and waiting for it to charge. Once the altar is ready right click with the Wand of the Forest to create the rune."]
+			dependencies: ["328B82259E40EBCC"]
+			id: "4AD347CCD982F0A5"
+			tasks: [{
+				id: "51B0581B208E4DCA"
+				type: "item"
+				item: "botania:rune_water"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "6A90185E8E2AC540"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1DA1F01E1B6F325F"
+					type: "item"
+					item: "waystones:waystone"
+				}
+			]
+		}
+		{
+			title: "Blast Furnace"
+			icon: "immersiveengineering:blast_furnace"
+			x: -34.5d
+			y: 0.0d
+			description: ["Steel requires much higher temperatures than our basic furnace can reach so make a Blast Furnace.  Build a 3x3x3 cube out of Blast Brick and whack the center block of any side to form the multi block."]
+			dependencies: ["56837C137A4EF95E"]
+			id: "7397AD7E44C62E2F"
+			tasks: [{
+				id: "5BB8DB983B37EE19"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+			rewards: [
+				{
+					id: "0F9C854D9AACB3C9"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "3FF3BF0532081892"
+					type: "item"
+					item: "immersiveengineering:coal_coke"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Advanced Blast Furnace"
+			icon: "immersiveengineering:advanced_blast_furnace"
+			x: -34.5d
+			y: 2.0d
+			description: ["The Improved Blast Furnace is a better way of making steel.  It allows automation of inputs and outputs as well as the ability to attach powered Blast Furnace Preheaters to speed up the process."]
+			dependencies: ["7397AD7E44C62E2F"]
+			id: "4DFB2163866E119C"
+			tasks: [
+				{
+					id: "375ACADC3C138B6F"
+					type: "item"
+					item: "immersiveengineering:blastfurnace_preheater"
+					count: 2L
+				}
+				{
+					id: "0DE1027BB5193996"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "4576687EC79B94B9"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+			rewards: [
+				{
+					id: "36D2BAB39E834094"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 2
+				}
+				{
+					id: "226CA03551736AF0"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			title: "Squeezer"
+			icon: "immersiveengineering:squeezer"
+			x: -34.5d
+			y: 3.5d
+			description: ["The Industrial Squeezer is another 3x3x3 multiblock, but this time you may want to use the projector or the manual to see how to put it together.  Once you've built it use your engineer's hammer to whack the central wooden barrel from the side with the engineering blocks to form the multiblock. Now you can make plant oil."]
+			dependencies: [
+				"4DFB2163866E119C"
+				"79D80DEFD58E2B80"
+			]
+			id: "17D305D1ECC51A75"
+			tasks: [
+				{
+					id: "500DC66D3D44C7E4"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "5E8AA2A7D5CB3F8A"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3296329E660F444E"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "48ECF3C743139575"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "739A17A1B84E13EF"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "60B68B901FF9C5DE"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "6F3B06BE089DAACB"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "0EE2D6E534466E2D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "369EFCB96B1FEB38"
+					type: "item"
+					item: "immersivepetroleum:projector"
+				}
+				{
+					id: "642535D9EF332810"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			title: "Fermenter"
+			icon: "immersiveengineering:fermenter"
+			x: -34.5d
+			y: 5.4d
+			description: ["Your next Multiblock is a Fermenter to turn some of your fruits, grains, and vegetables into ethanol. Look inside the Engineer's manual under Heavy Machinery to find the materials you'll need to build."]
+			dependencies: ["17D305D1ECC51A75"]
+			id: "6DF25055AD310618"
+			tasks: [{
+				id: "701CFD8622AB9774"
+				type: "item"
+				item: "immersiveengineering:ethanol_bucket"
+			}]
+			rewards: [
+				{
+					id: "19DB6C9761737A1C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1CD25237285930D7"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			title: "Bio Diesel"
+			x: -34.5d
+			y: 9.0d
+			shape: "hexagon"
+			description: ["Finally, time to build the Refinery. Pipe your ethanol and plant oil into the Refinery to produce Biodiesel to get one of the four keys to the Nether."]
+			dependencies: ["704B814A6A757A1A"]
+			id: "262BEEE6D86950F4"
+			tasks: [{
+				id: "63E04B8776563CE4"
+				type: "item"
+				item: "immersiveengineering:biodiesel_bucket"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "7FA9086A9CE2E2F3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3212FBFDE022EDA9"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "463D84BE89BFB083"
+					type: "item"
+					item: {
+						id: "cyclic:glove_climb"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "botania:fel_pumpkin"
+			x: -32.0d
+			y: 0.0d
+			description: ["This pumpkin head spawns a blaze when placed on top of two iron bars.  Use these to get the blaze powder you'll need to progress until you can get into the nether."]
+			dependencies: ["56837C137A4EF95E"]
+			id: "75CDF7F4EC6A47E5"
+			tasks: [
+				{
+					id: "20C61F648C1D3DA6"
+					type: "item"
+					item: "botania:fel_pumpkin"
+				}
+				{
+					id: "21B010837E436991"
+					type: "item"
+					item: "minecraft:iron_bars"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "37756794973073BE"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "44C43E6FD8E0091B"
+					type: "item"
+					item: "botania:fel_pumpkin"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Dielectric"
+			x: -32.0d
+			y: 1.8d
+			description: ["Now is a good time to start building up your power systems.  You'll be using Powah so get started by making some of the basic items you'll be needing."]
+			dependencies: ["75CDF7F4EC6A47E5"]
+			id: "1744703FA10CFE72"
+			tasks: [
+				{
+					id: "45898A801197BCB9"
+					type: "item"
+					item: "powah:dielectric_paste"
+					count: 64L
+				}
+				{
+					id: "61BDF927C34B0362"
+					type: "item"
+					item: "powah:dielectric_rod"
+					count: 16L
+				}
+				{
+					id: "35A67B7C71664B41"
+					type: "item"
+					item: "powah:capacitor_basic"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "472B2CA003BB762F"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "20DEC061B00C9F3E"
+					type: "item"
+					item: "powah:book"
+				}
+			]
+		}
+		{
+			icon: "powah:furnator_starter"
+			x: -32.0d
+			y: 3.6d
+			description: ["Powah's machines begin at Starter tier and can be upgraded to make more power as you need it."]
+			dependencies: ["1744703FA10CFE72"]
+			id: "79D80DEFD58E2B80"
+			tasks: [
+				{
+					id: "765FE3D26900CCCC"
+					type: "item"
+					item: "powah:furnator_starter"
+				}
+				{
+					id: "031B7CFA8D03707C"
+					type: "item"
+					item: "powah:energy_cell_starter"
+				}
+				{
+					id: "2F1B39F35B98108E"
+					type: "item"
+					item: "powah:energy_cable_starter"
+					count: 12L
+				}
+			]
+			rewards: [
+				{
+					id: "151277269E61BB75"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "7E8F4EC20C08E2ED"
+					type: "item"
+					item: "minecraft:coal_block"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Machines"
+			icon: "cyclic:harvester"
+			x: -29.5d
+			y: 2.5d
+			description: ["The Harvester farms the crops in front of it, replanting the seeds after breaking the crop.  The Collector picks up any drops in range and stores them internally.  Pipes can be used to funnel these resources into the Crafter in order to automatically process your crops into the items you need. Higher tiers of crafters can store more recipes."]
+			dependencies: [
+				"648AACB9DAE3A8EF"
+				"79D80DEFD58E2B80"
+			]
+			id: "6010F100DE68DCA3"
+			tasks: [
+				{
+					id: "78500C15329D6DB5"
+					type: "item"
+					item: "rftoolsutility:crafter3"
+				}
+				{
+					id: "243F98975355FCC0"
+					type: "item"
+					item: "cyclic:harvester"
+				}
+				{
+					id: "39E7C147D94B083A"
+					type: "item"
+					item: "cyclic:collector"
+				}
+			]
+			rewards: [{
+				id: "6E80D34F87CE778B"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -27.0d
+			y: 7.5d
+			description: ["As you begin to need more of the higher essences the 1000 uses available from each Infusion Crystal begin to look awfully limited.  It's a big investment to craft but it will pay off with the convenience of being able to use it in the auto crafter so you no longer need to condense stack after stack after stack..."]
+			dependencies: ["74B9FFF2BD24E6DD"]
+			id: "1D49ACCBA05BCC16"
+			tasks: [{
+				id: "11977F79F52A1BAC"
+				type: "item"
+				item: "mysticalagriculture:master_infusion_crystal"
+			}]
+			rewards: [{
+				id: "1DE5A9A2DFB65D4B"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+				count: 2
+			}]
+		}
+		{
+			x: -29.5d
+			y: 9.0d
+			shape: "hexagon"
+			description: ["You're not the only one who needs ever growing power systems.  Make me a Uraninite seed."]
+			dependencies: ["1D49ACCBA05BCC16"]
+			id: "179CEC526F9A020B"
+			tasks: [{
+				id: "3924C8D9D8CA5F7B"
+				type: "item"
+				item: "mysticalagriculture:uraninite_seeds"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "227DFDDFE81A310A"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Block of Energized Steel"
+			x: -32.0d
+			y: 9.0d
+			shape: "hexagon"
+			description: ["Create Energized Steel by right clicking the energizing orb with one iron and one gold ingot.  Make a block of this for your next key item."]
+			dependencies: ["6C208086DE756B42"]
+			id: "2BF02794ED464765"
+			tasks: [{
+				id: "003FEE9E60762924"
+				type: "item"
+				item: "powah:energized_steel_block"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "632467F41153D9CD"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Energizing"
+			x: -32.0d
+			y: 7.2d
+			description: ["You'll need that power to begin energizing materials for your more advanced tiers of Powah machines as well as for more materials to craft the Thing for the end of the pack.  The Energizing Orb itself does not take power but it needs energizing rods to function and the rods do require power.  Higher tier rods will energize faster."]
+			dependencies: ["5193265366B69F6E"]
+			id: "6C208086DE756B42"
+			tasks: [
+				{
+					id: "188B9F40AC8FEEBF"
+					type: "item"
+					item: "powah:energizing_rod_basic"
+				}
+				{
+					id: "204A3F0B6C03AEEB"
+					type: "item"
+					item: "powah:energizing_orb"
+				}
+			]
+			rewards: [{
+				id: "16C297C1E92C756F"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Enchantment"
+			x: -29.5d
+			y: 7.0d
+			description: ["You've been so helpful lately I decided to help you back.  Make me a special Honeycomb block and I'll give you a new catalyst that I'm sure you'll find useful."]
+			dependencies: ["048A87FD6AE06D92"]
+			id: "199EE9EBB8404ED8"
+			tasks: [
+				{
+					id: "5CFCE122351D2D02"
+					type: "item"
+					item: "extendedcrafting:advanced_table"
+				}
+				{
+					id: "555244DAD6AB14A4"
+					type: "item"
+					item: "minecraft:honeycomb_block"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "31DF8DDEF78AA2CE"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "7B296E1B3CDF4F91"
+					type: "command"
+					title: "Catalyst"
+					icon: "oneblock:nihilo_catalyst"
+					command: "/give @p oneblock:nihilo_catalyst{oblevel:1000000}"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Pedestals"
+			icon: "pedestals:pedestal/stone333"
+			x: -29.5d
+			y: 5.5d
+			description: ["Pedestals are incredibly versatile and powerful tools to help you with your automation systems.  Hold an upgrade in your off hand to apply it to the pedestal.  The Fertilizer upgrade woks on the 3x3 area around it by default but enchanting the upgrade can extend the range and speed."]
+			dependencies: ["1D6458ACD9F69AF7"]
+			id: "048A87FD6AE06D92"
+			tasks: [
+				{
+					id: "4FEE17E9AAB9B770"
+					type: "item"
+					item: "pedestals:linkingtool"
+				}
+				{
+					id: "58FBEC0F0210DC39"
+					type: "item"
+					item: "pedestals:pedestal/stone333"
+				}
+				{
+					id: "12653B03A0A79042"
+					type: "item"
+					item: "pedestals:coin/grower"
+				}
+			]
+			rewards: [
+				{
+					id: "0815346E8A1DBDDF"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "pedestals:upgraderange"
+							}]
+						}
+					}
+				}
+				{
+					id: "54462B60846970BF"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "pedestals:upgradearea"
+							}]
+						}
+					}
+				}
+				{
+					id: "765FC4260C9E86D5"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "pedestals:upgradespeed"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Tier 2 Seeds"
+			x: -27.0d
+			y: 3.6d
+			shape: "octagon"
+			description: ["These are the two Tier 2 seeds that will be particularly useful to help you through this chapter."]
+			dependencies: ["67EF84AEBED2AFC3"]
+			id: "0B2AA190F2D1DC90"
+			tasks: [
+				{
+					id: "59100ADD7907C303"
+					type: "item"
+					item: "mysticalagriculture:nature_seeds"
+				}
+				{
+					id: "12826D88A5BE379F"
+					type: "item"
+					item: "mysticalagriculture:coal_seeds"
+				}
+			]
+			rewards: [{
+				id: "2507ABB0DDA1AE80"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Tertium"
+			icon: "mysticalagriculture:tertium_essence"
+			x: -24.5d
+			y: 4.0d
+			dependencies: ["1AE8EF8B395598D9"]
+			id: "4B509E08CEF00ECD"
+			tasks: [{
+				id: "1802BFADC4EA835F"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+				count: 16L
+			}]
+			rewards: [{
+				id: "29896C6405961CD5"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+				count: 16
+			}]
+		}
+		{
+			title: "Automation Mystical"
+			x: -29.5d
+			y: 1.0d
+			shape: "octagon"
+			description: ["Now that you have power and valuable crops that you will need massive quantities of it's a good time to expand your automation beyond botany pots. Look at Chapter 2 Image"]
+			dependencies: ["4CC327262B75278F"]
+			id: "648AACB9DAE3A8EF"
+			tasks: [{
+				id: "02BBB3921A199870"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Red Fertilizer"
+			icon: "farmingforblockheads:red_fertilizer"
+			x: -29.5d
+			y: 4.0d
+			description: ["Use Red Fertilizer on farmland to significantly speed up the growth rate of crops."]
+			dependencies: ["6010F100DE68DCA3"]
+			id: "1D6458ACD9F69AF7"
+			tasks: [{
+				id: "2A20DAAB5B1FE79A"
+				type: "item"
+				item: "farmingforblockheads:red_fertilizer"
+				count: 4L
+			}]
+			rewards: [{
+				id: "1451A7A8FBE398A6"
+				type: "item"
+				item: "farmingforblockheads:red_fertilizer"
+				count: 4
+			}]
+		}
+		{
+			title: "Automated Mana Production"
+			x: -37.0d
+			y: 4.5d
+			shape: "circle"
+			description: ["Throwing coal at your flowers requires a level of attention I wouldn't want to maintain for long. These flowers are very easy to automate though so you won't have to.  See the Chapter 2 Image for a simple setup."]
+			dependencies: ["7BB75D86EFAC2095"]
+			id: "25753015E92D2DD1"
+			tasks: [
+				{
+					id: "2C16B79432440E71"
+					type: "item"
+					title: "Any #minecraft:wooden_pressure_plates"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:wooden_pressure_plates"
+						}
+					}
+				}
+				{
+					id: "57F664CD7ECE90EC"
+					type: "item"
+					item: "botania:open_crate"
+				}
+			]
+			rewards: [{
+				id: "3CF29DA70512C74F"
+				type: "item"
+				item: "minecraft:coal_block"
+				count: 16
+			}]
+		}
+		{
+			title: "Nether Dimension"
+			icon: "minecraft:crying_obsidian"
+			x: -33.0d
+			y: 11.0d
+			shape: "diamond"
+			description: ["You've prepared 4 more bits for me. Take this key and find the sphere with the matching door to gain access to the Nether.  BRING THE WAYSTONE!!!  This time you're taking a one way trip and I think you might want some way to get home."]
+			dependencies: [
+				"179CEC526F9A020B"
+				"4AD347CCD982F0A5"
+				"2BF02794ED464765"
+				"262BEEE6D86950F4"
+			]
+			hide: true
+			size: 2.0d
+			id: "6F2E09F790E203EE"
+			tasks: [{
+				id: "566D8EE3C04A4190"
+				type: "checkmark"
+				title: "Find the Dark Oak"
+			}]
+			rewards: [
+				{
+					id: "090B50949E3F9F41"
+					type: "item"
+					item: "kubejs:nether_key"
+				}
+				{
+					id: "70015A1EE9DD4EDD"
+					type: "item"
+					item: "waystones:waystone"
+				}
+			]
+		}
+		{
+			icon: "powah:reactor_starter"
+			x: -32.0d
+			y: 5.4d
+			description: ["When you're ready for more power than the furnace type generators can provide it's time to build a Reactor. NOTE: See Image for Chapter 2 and the Powah guide book for more information on how to build and use the reactor. The Reactor Blocks DON'T UPGRADE.  Craft the correct level to avoid wasting your resources!"]
+			dependencies: ["79D80DEFD58E2B80"]
+			id: "5193265366B69F6E"
+			tasks: [{
+				id: "3E01BC9C5852361C"
+				type: "item"
+				item: "powah:reactor_basic"
+				count: 36L
+			}]
+			rewards: [
+				{
+					id: "2600D5E2BA51CA40"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "663A66F15B3122BF"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -25.5d
+			y: 12.0d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["56837C137A4EF95E"]
+			size: 3.0d
+			id: "3BAE757126654A49"
+			tasks: [{
+				id: "681A8C63CC4BB5CC"
+				type: "item"
+				item: "good_nights_sleep:positite_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "2DEF017B92908A31"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -22.5d
+			y: 12.0d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["56837C137A4EF95E"]
+			size: 3.0d
+			id: "2B0A01B22394EA39"
+			tasks: [{
+				id: "5F5C6847FF209252"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+				count: 4L
+			}]
+			rewards: [{
+				id: "20152A6F5F8F54B8"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -24.0d
+			y: 9.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["56837C137A4EF95E"]
+			size: 3.0d
+			id: "5D1DB1950F0301B0"
+			tasks: [{
+				id: "089C6E88CE99B42A"
+				type: "item"
+				item: "good_nights_sleep:rainbow_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "107343DA32D90665"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -34.5d
+			y: 7.2d
+			description: ["The next big machine needs an alloy of silver and gold.  Build a 2x2x2 cube out of the kiln blocks and alloy some electrum."]
+			dependencies: ["6DF25055AD310618"]
+			id: "704B814A6A757A1A"
+			tasks: [
+				{
+					id: "51B5246747E92979"
+					type: "item"
+					item: "immersiveengineering:ingot_electrum"
+				}
+				{
+					id: "23A096E5D1203BDA"
+					type: "item"
+					item: "immersiveengineering:alloybrick"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "6733E20182170BAE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Prudentium"
+			x: -24.5d
+			y: 2.5d
+			dependencies: ["7DDF2C067830FCA9"]
+			id: "1AE8EF8B395598D9"
+			tasks: [{
+				id: "67C1FA39C5161418"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6A4760981BE23AD8"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+				count: 16
+			}]
+		}
+		{
+			x: -24.5d
+			y: 5.5d
+			dependencies: ["4B509E08CEF00ECD"]
+			id: "518DD5D3084828FA"
+			tasks: [{
+				id: "0B0F6D78AC753DA3"
+				type: "item"
+				title: "Imperium"
+				item: "mysticalagriculture:imperium_essence"
+				count: 16L
+			}]
+			rewards: [{
+				id: "01AD63994BE5324E"
+				type: "item"
+				item: "mysticalagriculture:imperium_essence"
+				count: 16
+			}]
+		}
+	]
+}

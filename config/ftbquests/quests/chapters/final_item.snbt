@@ -1,0 +1,321 @@
+{
+	id: "6A4BF2AA58581951"
+	group: ""
+	order_index: 6
+	filename: "final_item"
+	title: "FINAL ITEM"
+	icon: "good_nights_sleep:present"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "good_nights_sleep:present"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["I hope you've been building up your automation as you went.  Your final key comes in exchange for a very special present. Go unlock the last sphere and take a well deserved nap."]
+			dependencies: [
+				"0B006B73153149BC"
+				"078022FC39E8A5C3"
+				"4C6297A2C29F81F3"
+				"1DE8FF9368B1BD83"
+				"4A8824D742E18728"
+				"2AF70594807FD8EF"
+				"51A0310275941F70"
+				"7DFCCF404094571C"
+				"1367FBE7E8C393F9"
+				"40B34DB189EE69F7"
+				"090493D7E5845497"
+				"09EB8E089E6DA319"
+				"65C19D2B965AB18F"
+				"3F528B6A5AC5BA66"
+				"68457AD9B7A1ABB2"
+				"4CB279BD54BE7689"
+			]
+			size: 2.0d
+			id: "72C325B189D8B3DD"
+			tasks: [{
+				id: "036AA386716C0B80"
+				type: "item"
+				item: "good_nights_sleep:present"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4269CE5C03C71C63"
+				type: "item"
+				item: "kubejs:final_key"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			shape: "octagon"
+			description: ["This is the first of 15 different items you will need to make for my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			id: "7DFCCF404094571C"
+			tasks: [{
+				id: "5EE45ADAEE5856A3"
+				type: "item"
+				item: "good_nights_sleep:negatite_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "4032788317238115"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			shape: "octagon"
+			id: "51A0310275941F70"
+			tasks: [{
+				id: "322C29D748D32DF9"
+				type: "item"
+				item: "good_nights_sleep:positite_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "0FB14348A6A19EB4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			shape: "octagon"
+			id: "4C6297A2C29F81F3"
+			tasks: [{
+				id: "50F275C04B658813"
+				type: "item"
+				item: "good_nights_sleep:dream_planks"
+				count: 6L
+			}]
+			rewards: [{
+				id: "05F01DA2C5D55CE8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			shape: "octagon"
+			id: "1DE8FF9368B1BD83"
+			tasks: [{
+				id: "006A9A446425375D"
+				type: "item"
+				item: "good_nights_sleep:blood_log"
+				count: 6L
+			}]
+			rewards: [{
+				id: "0D905025398C2683"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			shape: "octagon"
+			id: "4A8824D742E18728"
+			tasks: [{
+				id: "18052E5F7D210A4C"
+				type: "item"
+				item: "good_nights_sleep:dead_log"
+				count: 6L
+			}]
+			rewards: [{
+				id: "69ABE9126BD4C17B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			shape: "octagon"
+			id: "2AF70594807FD8EF"
+			tasks: [{
+				id: "19E1B78A5360CD6E"
+				type: "item"
+				item: "good_nights_sleep:positite_gem"
+				count: 6L
+			}]
+			rewards: [{
+				id: "1BE820D82A7DE875"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			shape: "octagon"
+			id: "078022FC39E8A5C3"
+			tasks: [{
+				id: "0043ED64B9C6DB77"
+				type: "item"
+				item: "extendedcrafting:nether_star_block"
+				count: 8L
+			}]
+			rewards: [{
+				id: "6424D56D681B90AD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			shape: "octagon"
+			id: "40B34DB189EE69F7"
+			tasks: [{
+				id: "3879A51B455592F0"
+				type: "item"
+				item: "good_nights_sleep:rainbow_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "757646F15D73ED76"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			shape: "octagon"
+			id: "1367FBE7E8C393F9"
+			tasks: [{
+				id: "72B19157C6136843"
+				type: "item"
+				item: "minecraft:totem_of_undying"
+				count: 7L
+			}]
+			rewards: [{
+				id: "549577BCF67C521B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.0d
+			shape: "octagon"
+			id: "65C19D2B965AB18F"
+			tasks: [{
+				id: "098F7D7C2C02D8B3"
+				type: "item"
+				item: "botania:spawner_mover"
+			}]
+			rewards: [{
+				id: "14A1522630480E7F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			shape: "octagon"
+			id: "68457AD9B7A1ABB2"
+			tasks: [{
+				id: "507F11439680BE58"
+				type: "item"
+				item: "good_nights_sleep:candy_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "5A0EDE6583363439"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.5d
+			shape: "octagon"
+			id: "3F528B6A5AC5BA66"
+			tasks: [{
+				id: "70A17D93F2A235B5"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+				count: 4L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			shape: "octagon"
+			id: "090493D7E5845497"
+			tasks: [{
+				id: "70B8EC70ECB52595"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B0042B6E0E22179"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			shape: "octagon"
+			id: "4CB279BD54BE7689"
+			tasks: [{
+				id: "24ED66A5774FE41D"
+				type: "item"
+				item: "extendedcrafting:crystaltine_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "34DDD08F77CFFFEC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			shape: "octagon"
+			id: "09EB8E089E6DA319"
+			tasks: [{
+				id: "1C1D8533B0CB8B61"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
+			rewards: [{
+				id: "015235F49FCB208D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			shape: "octagon"
+			id: "0B006B73153149BC"
+			tasks: [{
+				id: "166B999F06EA2F9D"
+				type: "item"
+				item: "mob_grinding_utils:solid_xp_block"
+				count: 17L
+			}]
+			rewards: [{
+				id: "7F3AD0155D11C0E0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+}

@@ -1,0 +1,1722 @@
+{
+	id: "3722A005FA65B15B"
+	group: ""
+	order_index: 4
+	filename: "chapter_3_end_dimension"
+	title: "Chapter 3 \"End Dimension\""
+	icon: "minecraft:end_portal_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Basics"
+			x: -6.5d
+			y: -12.0d
+			description: ["You will be needing a LOT of these resources so I'd recommend getting these seeds growing before proceeding."]
+			dependencies: ["5591290A089C1583"]
+			id: "6D482A60DE97BC08"
+			tasks: [
+				{
+					id: "093F1B13B288D547"
+					type: "item"
+					item: "refinedstorage:silicon"
+					count: 64L
+				}
+				{
+					id: "6D09974D0252E1CE"
+					type: "item"
+					item: "refinedstorage:quartz_enriched_iron"
+					count: 64L
+				}
+				{
+					id: "6880EB8704D3A22F"
+					type: "item"
+					item: "refinedstorage:processor_binding"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "42CA3C7A9E52326D"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "18C9AA9A7A9C6FB7"
+					type: "item"
+					item: "refinedstorage:quartz_enriched_iron"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -22.0d
+			y: -9.0d
+			description: ["You're going to need a good supply of slime for this one.  But I won't make you go hunting for a swamp or slime chunk.  Light a water candle with flint and steel to spawn slimes anywhere you want them."]
+			dependencies: ["591B3C3A6531E902"]
+			id: "6E99684849769793"
+			tasks: [
+				{
+					id: "2C82CFFEAFADAF5F"
+					type: "item"
+					item: "cyclic:water_candle"
+				}
+				{
+					id: "2AA4409A80B805C0"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1E1305D8C713055E"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -12.0d
+			description: ["Craft the raw processers and smelt them to make the processors you will actually be using to build your system."]
+			dependencies: ["6D482A60DE97BC08"]
+			id: "52B8A2DA9983266E"
+			tasks: [
+				{
+					id: "33A449ACEB42E2E8"
+					type: "item"
+					item: "refinedstorage:basic_processor"
+				}
+				{
+					id: "720CA868E5A9CDE7"
+					type: "item"
+					item: "refinedstorage:improved_processor"
+				}
+				{
+					id: "7934A4703C4BD096"
+					type: "item"
+					item: "refinedstorage:advanced_processor"
+				}
+			]
+			rewards: [{
+				id: "01F67E24C01B74AF"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -12.0d
+			description: ["The heart of your storage system is the Controller.  Place it and supply it with power to get started.  All other refined storage devices need to be connected to the controller to work."]
+			dependencies: ["52B8A2DA9983266E"]
+			id: "2B79B094EF3EB0D8"
+			tasks: [{
+				id: "1103431D72F572AC"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+			rewards: [{
+				id: "751BBD869AB2AD33"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -10.5d
+			description: ["Connect a disk drive to your network to hold the storage disks that actually contain your items.  The 4k Storage Disk holds 4000 items. There are Fluid Storage disks for storing fluids as well."]
+			dependencies: ["2B79B094EF3EB0D8"]
+			id: "616AA19F5D1EE1AA"
+			tasks: [
+				{
+					id: "2951F17C63AB992A"
+					type: "item"
+					item: "refinedstorage:disk_drive"
+				}
+				{
+					id: "56870DD2AC4E34D6"
+					type: "item"
+					item: "refinedstorage:4k_storage_disk"
+				}
+			]
+			rewards: [
+				{
+					id: "5DC6790EC4DBB908"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "5BBADDFFAFC20B45"
+					type: "item"
+					item: "refinedstorage:16k_storage_disk"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -10.5d
+			description: ["You can use a basic Grid to have access to your items in the network, but you can skip right to the crafting grid and be able to craft with items while they're still in your storage.  As your system gets larger you will likely want to begin to use cables to connect different parts."]
+			dependencies: ["21AD95D3E95B562E"]
+			id: "7D25258EBA0B3C50"
+			tasks: [
+				{
+					id: "7619EFF85F6F3306"
+					type: "item"
+					item: "refinedstorage:crafting_grid"
+				}
+				{
+					id: "5A6C91B820049CD0"
+					type: "item"
+					item: "refinedstorage:cable"
+				}
+			]
+			rewards: [{
+				id: "2C846B9940CD15E1"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -9.0d
+			description: ["The importer and exporter can be connected to an inventory to automatically transfer items in and out of the network.  Configure the filters to control what they transfer.  Another very useful interface is the External Storage.  Attach that to an inventory to allow your system to store and use items outside itself.  Note: Consider attaching your exisisting storage drawer as external storage, drawers are considerably easier to make for bulk goods storage."]
+			dependencies: ["7D25258EBA0B3C50"]
+			id: "6C6E52A5964E2793"
+			tasks: [
+				{
+					id: "00EFF58B9770EB25"
+					type: "item"
+					item: "refinedstorage:importer"
+				}
+				{
+					id: "55BFC8E1A6984739"
+					type: "item"
+					item: "refinedstorage:exporter"
+				}
+				{
+					id: "618BC5BB08892A14"
+					type: "item"
+					item: "refinedstorage:external_storage"
+				}
+			]
+			rewards: [
+				{
+					id: "5D6D9F309F64B3C6"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "26F1D380093318D9"
+					type: "item"
+					item: "refinedstorage:importer"
+				}
+				{
+					id: "27012266D93B5B84"
+					type: "item"
+					item: "refinedstorage:external_storage"
+				}
+				{
+					id: "73885DCF475AA81C"
+					type: "item"
+					item: "refinedstorage:exporter"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -9.0d
+			description: ["Pretty straightforward: use these upgrades on your importer and exporters to help things flow faster.  Speed upgrades stack but only one stack upgrade applies."]
+			dependencies: ["6C6E52A5964E2793"]
+			id: "4B753B8CA4C36C4D"
+			tasks: [
+				{
+					id: "4A1725A83A3C09DD"
+					type: "item"
+					item: "refinedstorage:speed_upgrade"
+				}
+				{
+					id: "6251D731D2C6A543"
+					type: "item"
+					item: "refinedstorage:stack_upgrade"
+				}
+			]
+			rewards: [{
+				id: "02F6FA094306F892"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -9.0d
+			description: ["Your Refined storage can craft needed items for you using Patterns.  Use the Pattern Grid to create a pattern for your system to use."]
+			dependencies: ["4B753B8CA4C36C4D"]
+			id: "250F1B2A623A9269"
+			tasks: [
+				{
+					id: "70D76377585B9157"
+					type: "item"
+					item: "refinedstorage:pattern_grid"
+				}
+				{
+					id: "013B7DA6F3A4E141"
+					type: "item"
+					item: "refinedstorage:pattern"
+				}
+			]
+			rewards: [
+				{
+					id: "4A9CD3A8FEA6FA4D"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "6A80A0A3C59DBAE0"
+					type: "item"
+					item: "refinedstorage:pattern"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -7.5d
+			description: ["Once you have a pattern place it into a crafter for your system to use. If you search your system for an item you've taught it how to make you can instruct it to craft it for you if you're out.  If you also told it how to make the materials it needs to craft the item it will automatically craft what it needs to fill your request.  If not it will tell you what you're missing."]
+			dependencies: ["250F1B2A623A9269"]
+			id: "3E512F339B4C4036"
+			tasks: [{
+				id: "0DB88EBBB6F857B0"
+				type: "item"
+				item: "refinedstorage:crafter"
+			}]
+			rewards: [{
+				id: "469B0CAAA0134AB0"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -7.5d
+			description: ["Want easier access to your main storage?  With the Wireless Transmitter and a Wireless crafting Grid you can access your storage without going to it.  By default the transmitter reaches to 16 blocks away but with the range upgrades it reaches up to 48.  Attach more transmitters to your network for even more coverage."]
+			dependencies: ["4B753B8CA4C36C4D"]
+			id: "2DC8FA81466413BE"
+			tasks: [
+				{
+					id: "2619F2117E7B9C44"
+					type: "item"
+					item: "refinedstorage:wireless_transmitter"
+				}
+				{
+					id: "5B6DC983799BCA30"
+					type: "item"
+					item: "refinedstorage:range_upgrade"
+				}
+				{
+					id: "6B84C34AD0829554"
+					type: "item"
+					item: "refinedstorageaddons:wireless_crafting_grid"
+				}
+			]
+			rewards: [
+				{
+					id: "4587202B56269929"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "0DD0878157FE398B"
+					type: "item"
+					item: "refinedstorage:range_upgrade"
+					count: 3
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -7.5d
+			description: ["For truly wireless network access even at large distances and across dimensions you need to use the Network Transmitter and Receivers.  Attach the Transmitter to your main network and place the receiver where you need access. Right click the Network Card on the receiver then place that card into the transmitter.  The receiver acts as the controller for the outpost and allows full access to the main network.  NOTE: The receiver and transmitter must BOTH be in loaded chunks to function.  Use your map to claim and force load the chunks they are in."]
+			dependencies: ["2DC8FA81466413BE"]
+			id: "10BE5AF52C589D65"
+			tasks: [
+				{
+					id: "7443513955A631F7"
+					type: "item"
+					item: "refinedstorage:network_transmitter"
+				}
+				{
+					id: "56496A2343FB9EA3"
+					type: "item"
+					item: "refinedstorage:network_receiver"
+				}
+				{
+					id: "5FD9F38386E32391"
+					type: "item"
+					item: "refinedstorage:network_card"
+				}
+			]
+			rewards: [
+				{
+					id: "1CD910C1E342D074"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "7D100A418D75EE01"
+					type: "item"
+					item: "refinedstorage:wireless_transmitter"
+				}
+				{
+					id: "16CAB479726B375F"
+					type: "item"
+					item: "refinedstorage:range_upgrade"
+				}
+			]
+		}
+		{
+			x: -11.0d
+			y: -9.0d
+			shape: "octagon"
+			description: ["Now that you have mobs spawning and can move them wherever you want them it's time to build the piece that waits for them at the end of their journey.  The mob masher is a very powerful way to automatically kill mobs and still receive drops that are typically exclusive to player kills.  It's upgradeable for quicker kills. Simply turn it on with a redstone signal."]
+			dependencies: ["631CF8DED519EB4C"]
+			id: "1C85F76D98CA86FD"
+			tasks: [{
+				id: "013A3863DC3BA136"
+				type: "item"
+				item: "mob_grinding_utils:saw"
+			}]
+			rewards: [{
+				id: "7D95C567D8C508EA"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -12.0d
+			shape: "octagon"
+			description: ["The entity conveyor can be used to push mobs around horizontally.  Mobs CAN spawn on the conveyors making a simple darkroom spawner possible.  Note: The conveyor blocks allow light through so block light via other blocks around and below them."]
+			dependencies: ["1EF5A021642E8B08"]
+			id: "3C71734B8311248C"
+			tasks: [{
+				id: "55E2501EADC1D69C"
+				type: "item"
+				item: "mob_grinding_utils:entity_conveyor"
+			}]
+			rewards: [{
+				id: "7BC9CED6B2BA98DE"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -10.5d
+			shape: "octagon"
+			description: ["A different way to move your mobs around is with the mob fan.  This block allows vertical and horizontal movement with range upgrades available. Use this to keep flying mobs on the floor as well as push all mobs towards your killing mechanism."]
+			dependencies: ["3C71734B8311248C"]
+			id: "3FECB2D5CEE73FE6"
+			tasks: [
+				{
+					id: "61280E6EEF46F2CE"
+					type: "item"
+					item: "mob_grinding_utils:fan"
+				}
+				{
+					id: "19488DFD0A15346F"
+					type: "item"
+					item: "mob_grinding_utils:fan_upgrade_width"
+				}
+				{
+					id: "533C4212C3348012"
+					type: "item"
+					item: "mob_grinding_utils:fan_upgrade_height"
+				}
+				{
+					id: "068F4C4B4CB4BBFB"
+					type: "item"
+					item: "mob_grinding_utils:fan_upgrade_speed"
+				}
+			]
+			rewards: [{
+				id: "68E3F730436C5299"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -9.0d
+			shape: "octagon"
+			description: ["Once your mob masher is chewing through everything that spawns you need something that can pick up all of the loot and experience orbs.  The Absorption Hopper is the perfect solution. Note: While it cannot pick up through solid blocks it can pick up through the mob masher."]
+			dependencies: ["1C85F76D98CA86FD"]
+			id: "1FF2942AD05DEE51"
+			tasks: [
+				{
+					id: "01F20B7A0874838E"
+					type: "item"
+					item: "mob_grinding_utils:absorption_hopper"
+				}
+				{
+					id: "208531492797E2BD"
+					type: "item"
+					item: "mob_grinding_utils:absorption_upgrade"
+				}
+			]
+			rewards: [{
+				id: "1034BE1F751972FA"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -10.5d
+			shape: "octagon"
+			description: ["Keep endermen in place with the Ender Inhibitor.  This prevents mobs within 8 blocks from teleporting.  Activate it with a right click."]
+			dependencies: ["3FECB2D5CEE73FE6"]
+			id: "20110C778E20B10D"
+			tasks: [{
+				id: "1D0BC96B891C5914"
+				type: "item"
+				item: "mob_grinding_utils:ender_inhibitor_on"
+			}]
+			rewards: [{
+				id: "65969E8CE8CDA9B0"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -9.0d
+			shape: "octagon"
+			description: ["Experience actually takes up quite a lot of space.  The Singularity Tank can hold 32 buckets of fluid and the Jumbo Tank can hold a whopping 1024 buckets."]
+			dependencies: ["1FF2942AD05DEE51"]
+			id: "4952C22A12346484"
+			tasks: [
+				{
+					id: "5498F42BE6DB7642"
+					type: "item"
+					item: "mob_grinding_utils:tank"
+				}
+				{
+					id: "3320C9F0BC181E56"
+					type: "item"
+					item: "mob_grinding_utils:jumbo_tank"
+				}
+			]
+			rewards: [{
+				id: "45CA53D9E03BD862"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -7.5d
+			shape: "octagon"
+			description: ["The XP Drain Singularity tank holds 32 buckets of fluid and comes with a drain on top that you can stand on to convert your player levels into liquid experience.  Use the XP Tap on the side of a tank with fluid experience inside to turn it back into experience orbs."]
+			dependencies: ["4952C22A12346484"]
+			id: "3272CDDE79DC22CC"
+			tasks: [
+				{
+					id: "64FF90F823115D93"
+					type: "item"
+					item: "mob_grinding_utils:tank_sink"
+				}
+				{
+					id: "1F046B59989971B9"
+					type: "item"
+					item: "mob_grinding_utils:xp_tap"
+				}
+			]
+			rewards: [{
+				id: "024AB02CF42A9D1C"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -10.5d
+			shape: "octagon"
+			description: ["Tinted Glass makes a useful building block for your mob farms.  Blocks light while still allowing you to see through and tough enough to withstand even wither explosions."]
+			dependencies: ["20110C778E20B10D"]
+			id: "631CF8DED519EB4C"
+			tasks: [{
+				id: "1A252FD950D2B8B7"
+				type: "item"
+				item: "mob_grinding_utils:tinted_glass"
+			}]
+			rewards: [{
+				id: "06654EE48EAD44CF"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -6.0d
+			shape: "octagon"
+			description: ["Take that spawn egg and put it into an Entity Spawner powered with Jelly Babies.  Turn the spawner on with a redstone signal and it will spawn mobs in a small area around it.  No more wandering the nether fortresses hunting for wither skeletons required!"]
+			dependencies: ["494D5157A7DF4C65"]
+			id: "5B39C8EE19F0ABB5"
+			tasks: [{
+				id: "1C4F069A12B67467"
+				type: "item"
+				item: "mob_grinding_utils:entity_spawner"
+			}]
+			rewards: [{
+				id: "53E59706142A17D1"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -7.5d
+			shape: "octagon"
+			description: ["Your fluid xp can be processed into jelly babies that you will need for the final key and can also be used to fuel a custom spawner."]
+			dependencies: ["3272CDDE79DC22CC"]
+			id: "21B58AA5352083EB"
+			tasks: [
+				{
+					id: "009BB06F5A1651CD"
+					type: "item"
+					item: "mob_grinding_utils:xpsolidifier"
+				}
+				{
+					id: "6D927FFEA23BA2A7"
+					type: "item"
+					item: "mob_grinding_utils:solid_xp_mould_baby"
+				}
+			]
+			rewards: [{
+				id: "341AD2763D0BA5C7"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Mob Eggs"
+			icon: "minecraft:zombie_spawn_egg"
+			x: -11.0d
+			y: -7.5d
+			shape: "octagon"
+			description: ["You can buy passive mob eggs from the market but when you want to target a certain hostile mob you need to make your own egg.  To do this find a wild version of the mob you want and right click it with a Mob Swab.  Take the used mob swab and craft it with a seed and a bucket of xp.  Feed the resulting GM chicken feed to a chicken to get your spawn egg."]
+			dependencies: [
+				"21B58AA5352083EB"
+				"3BBF93D0AA4D22F6"
+			]
+			id: "494D5157A7DF4C65"
+			tasks: [
+				{
+					id: "7C1ADC44988F95C6"
+					type: "item"
+					item: "minecraft:wither_skeleton_spawn_egg"
+				}
+				{
+					id: "774D60FD6196D6D4"
+					type: "item"
+					item: "mob_grinding_utils:mob_swab"
+				}
+				{
+					id: "4BC54FFC558C301D"
+					type: "item"
+					item: "mob_grinding_utils:gm_chicken_feed"
+				}
+			]
+			rewards: [{
+				id: "778BABFC95550BF5"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			icon: "mob_grinding_utils:rotten_egg"
+			x: -12.5d
+			y: -12.0d
+			shape: "octagon"
+			description: ["There is more than one way to make a mob farm.  A Rotten Egg used on dirt or grass makes a 5x5 area of dreadful dirt that will spawn hostile mobs regardless of light level.  It needs a roof though as sunlight will burn it up.  Feed a chicken some cursed GM chicken feed to get the rotten egg."]
+			dependencies: ["1EF5A021642E8B08"]
+			id: "20891AC353268071"
+			tasks: [
+				{
+					id: "00A29CABFE02F1F0"
+					type: "item"
+					item: "mob_grinding_utils:rotten_egg"
+				}
+				{
+					id: "2197ED3A775DC334"
+					type: "item"
+					item: "mob_grinding_utils:gm_chicken_feed_cursed"
+				}
+			]
+			rewards: [{
+				id: "5E62398D09D47772"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			icon: "mob_grinding_utils:golden_egg"
+			x: -11.0d
+			y: -12.0d
+			shape: "octagon"
+			description: ["If passive mobs are what you want a Golden Egg can be used to make a 5x5 patch of delightful dirt that will spawn lots of passive mobs even with you nearby.  Feed a chicken some nutritious chicken feed to get the golden egg."]
+			dependencies: ["1EF5A021642E8B08"]
+			id: "03D3946B2ECAC9C7"
+			tasks: [
+				{
+					id: "4AC49C959E8FF072"
+					type: "item"
+					item: "mob_grinding_utils:golden_egg"
+				}
+				{
+					id: "50127FC1903DF385"
+					type: "item"
+					item: "mob_grinding_utils:nutritious_chicken_feed"
+				}
+			]
+			rewards: [{
+				id: "57BF407ED6BF3802"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "End Dimension"
+			icon: "minecraft:end_portal_frame"
+			x: -20.0d
+			y: 0.0d
+			shape: "diamond"
+			description: ["One more collection completed. Here's your next key and just like before you need to find the door that matches your key to find the access. Go check it out and bring back a Dragon Egg and an Elytra."]
+			dependencies: [
+				"343F8C4DBBBAE68B"
+				"36D6F5595DAD7EAC"
+				"094634C273BAF0F6"
+				"7C8A2DE24A9768A8"
+			]
+			size: 2.0d
+			id: "479C55AC9D7F234C"
+			tasks: [{
+				id: "0D9EC3B51D6DF1CF"
+				type: "checkmark"
+				title: "Find the Birch"
+			}]
+			rewards: [{
+				id: "1520A0FF06673014"
+				type: "item"
+				item: "kubejs:end_key"
+			}]
+		}
+		{
+			title: "Asphalt"
+			x: -24.0d
+			y: -1.5d
+			description: ["Asphalt Concrete makes for fantastic walkways as it increases your walking speed by 20%!  Thank you for doing all the hard work for me, now I can go be speedy speedy!"]
+			dependencies: ["0CDE75D6916612E9"]
+			id: "7C8A2DE24A9768A8"
+			tasks: [{
+				id: "6ADFC9A6BD576B18"
+				type: "item"
+				item: "immersivepetroleum:asphalt"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "15A855D763992BE8"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Slime"
+			x: -22.0d
+			y: -3.0d
+			description: ["Melt some slime essence down and get me a bucket of the melted glop.  You might want to go take a bath afterwards."]
+			dependencies: ["13D53211FDE6CFDC"]
+			id: "343F8C4DBBBAE68B"
+			tasks: [{
+				id: "07A2AADB6FB6027C"
+				type: "item"
+				item: "cyclic:slime_bucket"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "0D57E002792BF422"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "14FF3BCC3D0FB814"
+					type: "item"
+					item: "minecraft:sponge"
+				}
+			]
+		}
+		{
+			title: "Distillation Tower"
+			icon: "immersivepetroleum:distillationtower"
+			x: -24.0d
+			y: -3.5d
+			description: ["Now that you have crude oil you need to refine it.  The distillation tower is a large multiblock that separates the crude oil into multiple byproducts.  It occasionally produces Bitumen which is the product I'm looking for, you can use the rest for whatever you like."]
+			dependencies: ["5B7614C51E9AEA1E"]
+			id: "0CDE75D6916612E9"
+			tasks: [{
+				id: "4B8C0AC32F1F33D7"
+				type: "item"
+				item: "immersivepetroleum:bitumen"
+				count: 2L
+			}]
+			rewards: [{
+				id: "679FCCDBA7C000A0"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Pumpjack"
+			icon: "immersivepetroleum:pumpjack"
+			x: -24.0d
+			y: -5.5d
+			shape: "circle"
+			description: ["Once you've found oil build a Pumpjack inside the chunk where you found it. Once you've built it whack the bottom heavy engineering block to form the multiblock, give it power, a tank to output to and watch the oil materialize from thin air."]
+			dependencies: ["0F199508052563A0"]
+			id: "5B7614C51E9AEA1E"
+			tasks: [{
+				id: "51AC3D9FAB88445E"
+				type: "item"
+				item: "immersivepetroleum:oil_bucket"
+			}]
+			rewards: [{
+				id: "3C295A9A8FF26C9D"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -24.0d
+			y: -7.5d
+			description: ["Now you're going looking for oil.  A core sample drill will search the chunk it is placed in for a reservoir.  It needs power to operate and you will probably need to check more than one chunk so just take a charged up energy cell with you and place them together.  Right click on the drill to take the sample and don't try to figure out what is actually being sampled in the void.  I don't know either but there is oil out here. Note: Press F3 + G to show the chunk borders."]
+			dependencies: ["367A3DC97B553AF3"]
+			id: "0F199508052563A0"
+			tasks: [{
+				id: "681F3E390A4F6452"
+				type: "item"
+				item: "immersiveengineering:sample_drill"
+			}]
+			rewards: [{
+				id: "212780A4F5DF6F37"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -22.0d
+			y: -11.0d
+			description: ["I hope you found some Soulium Ore in the nether.  If not, go get some, I'll wait here.  Kill mobs with the Soulium Dagger to gather souls in a soul jar.  It will generally take more than one to fill a jar but once they are full they can be used to craft seeds to grow the mobs essences just like the rest of your crops."]
+			dependencies: ["1C8CEE753D7E2278"]
+			id: "591B3C3A6531E902"
+			tasks: [
+				{
+					id: "239CF4703EF5D2A8"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:soulium_dagger"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "785EFBBCF810B2E4"
+					type: "item"
+					icon: "mysticalagriculture:soul_jar"
+					item: {
+						id: "mysticalagriculture:soul_jar"
+						Count: 1b
+						tag: {
+							Souls: 12.0d
+							Type: "mysticalagriculture:slime"
+						}
+					}
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "775807C58883D032"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "214F4C7323F344B8"
+					type: "item"
+					item: "mysticalagriculture:soulium_ore"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -20.0d
+			y: -9.0d
+			description: ["Time to upgrade your fancy crafting table again."]
+			dependencies: ["1C8CEE753D7E2278"]
+			id: "51686BDABB064268"
+			tasks: [{
+				id: "66496C1043CA37C2"
+				type: "item"
+				item: "extendedcrafting:elite_table"
+			}]
+			rewards: [{
+				id: "15337B248CB33082"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Spark"
+			x: -18.0d
+			y: -9.0d
+			description: ["The agglomeration plate uses a large amount of mana for each craft so sparks work well to quickly deliver the volume of mana it needs.  Right click one spark on the plate and the other onto your mana pool."]
+			dependencies: ["2709F8F66BE916EF"]
+			id: "06D7B02B20ABD7F5"
+			tasks: [{
+				id: "2BA761D54FBF57A6"
+				type: "item"
+				item: "botania:spark"
+				count: 2L
+			}]
+			rewards: [{
+				id: "0DF190A1A943B6AF"
+				type: "item"
+				item: "botania:blacker_lotus"
+				count: 2
+			}]
+		}
+		{
+			x: -18.0d
+			y: -11.0d
+			description: ["Use the Terrestrial Agglomeration Plate to make Terrasteel.  Build the 3x3 base with 4 livingrock in the corners and center and fill the side spaces with the lapis blocks.  Place the plate on top of the central livingrock block."]
+			dependencies: ["1C8CEE753D7E2278"]
+			id: "2709F8F66BE916EF"
+			tasks: [
+				{
+					id: "7C22DBCD5D3F958E"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "55320CB42D05F9C8"
+					type: "item"
+					item: "botania:livingrock"
+					count: 5L
+				}
+				{
+					id: "3FD948A5D2F0196D"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "2A07630DBEF19F01"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Portal to Alfheim"
+			x: -18.0d
+			y: -5.0d
+			description: ["You won't get to go visit the elves but building this portal will allow you to trade with them for some very special materials. The portal frame is a 5x5 square with the core in the center of the bottom, the glimmering livingwood in the center of each side and the top, and the rest of the frame built out of livingwood.  The pylons need to be placed above mana pools near the portal.  Right click on the core with your wand of the forest to activate.  The portal will consume mana to open and for every trade.  If the pools run out of mana the portal will close."]
+			dependencies: ["77198D94DD4EB00C"]
+			id: "77B8C2CA22C960AC"
+			tasks: [
+				{
+					id: "6E09D25BF05C9129"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+				{
+					id: "2CFC5526A1748083"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "664AAAF19476DCDC"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "015609F7CBBE459D"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -3.0d
+			description: ["Now that your communication channel has been established get me some Pixie Dust."]
+			dependencies: ["77B8C2CA22C960AC"]
+			id: "36D6F5595DAD7EAC"
+			tasks: [{
+				id: "625C0046968C4602"
+				type: "item"
+				item: "botania:pixie_dust"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "084D2CDA68D7583C"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "40A6B0CBAEE085C4"
+					type: "item"
+					item: "botania:pixie_dust"
+					count: 5
+				}
+			]
+		}
+		{
+			x: -24.0d
+			y: -9.5d
+			description: ["Distributing power with cables gets cluttered as your systems and base grow so alongside your improved reactor lets get some wireless energy transfer going. Note: See Chapter 3 Image for help with the Ender Cell."]
+			dependencies: [
+				"4D21619D207C58AB"
+				"08C055407026640E"
+			]
+			id: "367A3DC97B553AF3"
+			tasks: [
+				{
+					id: "0396117D30283C62"
+					type: "item"
+					item: "powah:reactor_hardened"
+					count: 36L
+				}
+				{
+					id: "188615D029B98166"
+					type: "item"
+					item: "powah:ender_cell_hardened"
+				}
+				{
+					id: "35A5F578BE4A300C"
+					type: "item"
+					item: "powah:ender_gate_hardened"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "2B21833DC6F1A446"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -20.0d
+			y: -5.0d
+			description: ["I hope you actually took the time to automate production of those seeds you crafted a while back. This key is pretty simple, but it won't be cheap."]
+			dependencies: ["51686BDABB064268"]
+			id: "094634C273BAF0F6"
+			tasks: [{
+				id: "7B6BA048299A5A25"
+				type: "item"
+				item: "extendedcrafting:crystaltine_block"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "2ACA36DC4243DAAE"
+					type: "item"
+					item: "extendedcrafting:crystaltine_ingot"
+					count: 9
+				}
+				{
+					id: "175EC1FA69DB2E18"
+					type: "item"
+					item: "coins:coin"
+				}
+			]
+		}
+		{
+			x: -18.0d
+			y: -7.0d
+			description: ["Once you've built the platform and accumulated sufficient mana right click the materials onto the plate and stand back while it draws the mana and infuses the Terrasteel. Note: If you accidentally pick up the materials during the infusion process the mana transferred is lost."]
+			dependencies: ["06D7B02B20ABD7F5"]
+			id: "77198D94DD4EB00C"
+			tasks: [{
+				id: "58477CE4A2D3E042"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+			rewards: [{
+				id: "20031D5EE5D194AF"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Crystaltine Block"
+			x: -1.5d
+			y: -4.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "69E9FA16F66A6888"
+			tasks: [{
+				id: "55490936BD1B55B5"
+				type: "item"
+				item: "extendedcrafting:crystaltine_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "0408DFA1EDACFA62"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "1B0CCBB10AFB08EA"
+			tasks: [{
+				id: "69120F01C07FBD3A"
+				type: "item"
+				item: "good_nights_sleep:candy_block"
+				count: 7L
+			}]
+			rewards: [{
+				id: "5880A93CA79656B2"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -4.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "00BF8FE901BC87E2"
+			tasks: [{
+				id: "59A59F5E5C8F5477"
+				type: "item"
+				item: "mob_grinding_utils:solid_xp_block"
+				count: 17L
+			}]
+			rewards: [{
+				id: "631DB416B3BB1FAF"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Back from the Nether"
+			icon: "minecraft:crying_obsidian"
+			x: -20.0d
+			y: -13.5d
+			shape: "octagon"
+			description: ["Looks like you survived the Nether.  Or maybe you didn't and keepInventory came in clutch.  Either way: you're back and we can get back to work.  Preparations for the next sphere access will include gathering souls, trading with elves, oil distillation, and even more elite crafting."]
+			dependencies: ["6F2E09F790E203EE"]
+			size: 1.5d
+			id: "1C8CEE753D7E2278"
+			tasks: [{
+				id: "7AEE893DAB4B1C24"
+				type: "checkmark"
+				icon: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: -24.0d
+			y: -11.5d
+			description: ["Immersive Engineering is a power hungry mod.  Let's upgrade your power system again."]
+			dependencies: ["1C8CEE753D7E2278"]
+			id: "4D21619D207C58AB"
+			tasks: [
+				{
+					id: "29C0BD92F9713EEC"
+					type: "item"
+					item: "powah:energy_cell_hardened"
+				}
+				{
+					id: "66A84B549A3E9A22"
+					type: "item"
+					item: "powah:energizing_rod_hardened"
+				}
+			]
+			rewards: [
+				{
+					id: "0A81CB810FFA3CB4"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "1DA2B5FE5D4D1BE1"
+					type: "item"
+					item: "powah:energizing_rod_hardened"
+				}
+				{
+					id: "7392D924E89EEDCC"
+					type: "item"
+					item: "powah:energy_cable_hardened"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: -1.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "21553136443A155A"
+			tasks: [{
+				id: "28FFA246896BCFE3"
+				type: "item"
+				item: {
+					id: "endrem:old_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2C65FCAB2A27605D"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -2.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "6C93C4BACE1CC303"
+			tasks: [{
+				id: "1BD12D94BBE0F611"
+				type: "item"
+				item: {
+					id: "endrem:rogue_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "11FEC4E7D33A06F9"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -2.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "0830DED893AE3078"
+			tasks: [{
+				id: "1260FA86849BBD3A"
+				type: "item"
+				item: {
+					id: "endrem:nether_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6571F4B5CCEAB767"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 0.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "2606367EE21C9987"
+			tasks: [{
+				id: "38EA0911B2D78A2F"
+				type: "item"
+				item: {
+					id: "endrem:cold_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6C00D661469A39F5"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 1.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "408447AB2E3ED6F2"
+			tasks: [{
+				id: "5A519C0FD84B48BA"
+				type: "item"
+				item: {
+					id: "endrem:corrupted_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3175D62FF6A96F68"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -2.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "28F1BE5D730F6633"
+			tasks: [{
+				id: "7B435CF0F558B6B8"
+				type: "item"
+				item: {
+					id: "endrem:magical_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2ED8F239E48DA527"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 1.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "08E6F2CE29388A54"
+			tasks: [{
+				id: "77746123267EA499"
+				type: "item"
+				item: {
+					id: "endrem:black_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "731405D6E6A09F8E"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -14.5d
+			y: 2.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "3671DC1A14EE17EB"
+			tasks: [{
+				id: "68786C3AAEDC2990"
+				type: "item"
+				item: {
+					id: "endrem:lost_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3403F9900EAA6E2C"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 2.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "2D6C77DEAD964CC9"
+			tasks: [{
+				id: "294F79F81E26E73C"
+				type: "item"
+				item: {
+					id: "endrem:wither_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "152BBCCBF437707D"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -1.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "34286D8B68D54F9C"
+			tasks: [{
+				id: "6D09957063EEE86C"
+				type: "item"
+				item: {
+					id: "endrem:end_crystal_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "51ACBAFBD05119E7"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 2.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["479C55AC9D7F234C"]
+			id: "2828108F4FE4649B"
+			tasks: [{
+				id: "2CDD7DCEB1464CAC"
+				type: "item"
+				item: {
+					id: "endrem:guardian_pearl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "728D05EAB92AE4F4"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 0.0d
+			shape: "octagon"
+			description: ["Craft the Powered Core and find all eleven ender eyes to activate the portal."]
+			dependencies: [
+				"479C55AC9D7F234C"
+				"08E6F2CE29388A54"
+				"2606367EE21C9987"
+				"408447AB2E3ED6F2"
+				"34286D8B68D54F9C"
+				"2828108F4FE4649B"
+				"3671DC1A14EE17EB"
+				"28F1BE5D730F6633"
+				"0830DED893AE3078"
+				"21553136443A155A"
+				"6C93C4BACE1CC303"
+				"2D6C77DEAD964CC9"
+			]
+			size: 1.5d
+			id: "055775998E0B4B42"
+			tasks: [{
+				id: "4937073A2A221DB5"
+				type: "item"
+				item: "endrem:powered_core"
+			}]
+			rewards: [
+				{
+					id: "26E887D6EA0C4C65"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "138BF8A71D616177"
+					type: "item"
+					item: "minecraft:end_crystal"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: -4.5d
+			shape: "octagon"
+			description: ["You now have everything you need to spawn and kill the wither safely, repeatedly.  Have fun getting revenge for any times it has killed you in the past."]
+			dependencies: ["5B39C8EE19F0ABB5"]
+			id: "73AFCCE20B737A74"
+			tasks: [{
+				id: "465226509AB8C880"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+			rewards: [{
+				id: "698480880594354C"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			title: "Recipe"
+			x: -9.0d
+			y: -7.5d
+			description: ["See the Chapter 3 \"Image\" for the GM Cicken Feed recipe."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			optional: true
+			id: "3BBF93D0AA4D22F6"
+			tasks: [{
+				id: "4D2045BC780765ED"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Step by Step"
+			x: -25.5d
+			y: -9.5d
+			description: ["Look at the Chapter 3 \"Image\" to see a step by step illustration for how to use the Ender Gate and Ender Cell."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			optional: true
+			id: "08C055407026640E"
+			tasks: [{
+				id: "0518CE1AB59B4D04"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -22.0d
+			y: -5.0d
+			description: ["The melting chamber uses power to melt down certain blocks or items into fluid."]
+			dependencies: ["2CDDF6DC1054EA5B"]
+			dependency_requirement: "one_completed"
+			id: "13D53211FDE6CFDC"
+			tasks: [{
+				id: "1C6E47C4662841E4"
+				type: "item"
+				item: "cyclic:melter"
+			}]
+			rewards: [{
+				id: "09A312D0B21E8F93"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -13.5d
+			shape: "octagon"
+			description: ["You should seriously consider building yourself a high tech Refined Storage system to help you keep your increasingly broad array of resources organized and useful while adding some convenient autocrafting on demand capabilities."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			id: "5591290A089C1583"
+			tasks: [{
+				id: "59D5E53281B2784F"
+				type: "checkmark"
+				title: "Refined Storage"
+			}]
+			rewards: [
+				{
+					id: "47F308DFB0F1B7AB"
+					type: "item"
+					item: "coins:coin"
+				}
+				{
+					id: "40D19EF5BE0928F1"
+					type: "item"
+					item: "mysticalagriculture:silicon_seeds"
+				}
+				{
+					id: "25A8105DA1705E74"
+					type: "item"
+					item: "mysticalagriculture:quartz_enriched_iron_seeds"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -10.5d
+			description: ["Construction and Destruction Cores are used in the parts that allow the system to interface with the physical world."]
+			dependencies: ["616AA19F5D1EE1AA"]
+			id: "21AD95D3E95B562E"
+			tasks: [
+				{
+					id: "54F88213A9064588"
+					type: "item"
+					item: "refinedstorage:construction_core"
+				}
+				{
+					id: "25EE1C2A7576CA14"
+					type: "item"
+					item: "refinedstorage:destruction_core"
+				}
+			]
+			rewards: [{
+				id: "395FC61467049C2A"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -13.5d
+			description: ["You don't need to build this stuff to craft the keys to the next dimension but you will need it to finish the pack and you have access to everything you need to automate the killing of all-of-the-things right now."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			id: "1EF5A021642E8B08"
+			tasks: [{
+				id: "0B2A6BBBD28EDDC6"
+				type: "checkmark"
+				title: "Mob Grinding Utils"
+			}]
+		}
+		{
+			x: -22.0d
+			y: -7.0d
+			description: ["You were killing those slimes with the Soulium Dagger you just made weren't you?"]
+			dependencies: ["6E99684849769793"]
+			id: "2CDDF6DC1054EA5B"
+			tasks: [{
+				id: "6D7A4D04B72FC40D"
+				type: "item"
+				item: "mysticalagriculture:slime_seeds"
+			}]
+			rewards: [{
+				id: "7E23F4729ED2AC0B"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "71E7B5402100954D"
+			tasks: [{
+				id: "1FD2C6938ECD76A7"
+				type: "item"
+				item: "extendedcrafting:nether_star_block"
+				count: 8L
+			}]
+			rewards: [{
+				id: "3CFC40AA1286C153"
+				type: "item"
+				item: "coins:coin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "3A983F361A676013"
+			tasks: [{
+				id: "3EFA75DEFFEE1D3C"
+				type: "item"
+				item: "good_nights_sleep:dream_planks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "757C4A24E9C8EAC7"
+			tasks: [{
+				id: "702F926F777A35E9"
+				type: "item"
+				item: "good_nights_sleep:positite_gem"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "3671FC08A7524618"
+			tasks: [{
+				id: "4B5C82971709CC3E"
+				type: "item"
+				item: "good_nights_sleep:blood_log"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			shape: "octagon"
+			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			hide_dependency_lines: true
+			dependencies: ["1C8CEE753D7E2278"]
+			size: 3.0d
+			id: "7E657CDFE52E94AD"
+			tasks: [{
+				id: "7EA9F4CF5903037F"
+				type: "item"
+				item: "good_nights_sleep:dead_log"
+			}]
+		}
+	]
+}

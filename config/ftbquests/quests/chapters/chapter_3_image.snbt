@@ -1,0 +1,33 @@
+{
+	id: "21041B3D2F76DFEF"
+	group: ""
+	order_index: 5
+	filename: "chapter_3_image"
+	title: "Chapter 3 \"Image\""
+	icon: "minecraft:painting"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: 0.0d
+		width: 27.0d
+		height: 16.0d
+		rotation: 0.0d
+		image: "modpack:textures/chapter_3_image.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [{
+		x: 0.5d
+		y: -7.0d
+		dependencies: ["1C8CEE753D7E2278"]
+		hide: true
+		id: "51270203186E1958"
+		tasks: [{
+			id: "34247F3414B71017"
+			type: "checkmark"
+		}]
+	}]
+}
