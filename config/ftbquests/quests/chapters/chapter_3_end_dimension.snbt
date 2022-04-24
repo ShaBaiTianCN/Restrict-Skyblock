@@ -3,16 +3,16 @@
 	group: ""
 	order_index: 4
 	filename: "chapter_3_end_dimension"
-	title: "Chapter 3 \"End Dimension\""
+	title: "第三章 \"末地维度\""
 	icon: "minecraft:end_portal_frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Basics"
+			title: "基础"
 			x: -6.5d
 			y: -12.0d
-			description: ["You will be needing a LOT of these resources so I'd recommend getting these seeds growing before proceeding."]
+			description: ["你将需要大量这些资源，所以我建议在开始之前把种子种下去"]
 			dependencies: ["5591290A089C1583"]
 			id: "6D482A60DE97BC08"
 			tasks: [
@@ -52,7 +52,7 @@
 		{
 			x: -22.0d
 			y: -9.0d
-			description: ["You're going to need a good supply of slime for this one.  But I won't make you go hunting for a swamp or slime chunk.  Light a water candle with flint and steel to spawn slimes anywhere you want them."]
+			description: ["这次你需要大量的史莱姆。但我不会让你找沼泽或史莱姆区块。你可以在任何地方用打火石点亮水蜡烛来生成史莱姆。"]
 			dependencies: ["591B3C3A6531E902"]
 			id: "6E99684849769793"
 			tasks: [
@@ -82,7 +82,7 @@
 		{
 			x: -5.0d
 			y: -12.0d
-			description: ["Craft the raw processers and smelt them to make the processors you will actually be using to build your system."]
+			description: ["先做未处理的处理器，然后放熔炉烧一下它就会变成可以用来构建网路的处理器。"]
 			dependencies: ["6D482A60DE97BC08"]
 			id: "52B8A2DA9983266E"
 			tasks: [
@@ -111,7 +111,7 @@
 		{
 			x: -3.5d
 			y: -12.0d
-			description: ["The heart of your storage system is the Controller.  Place it and supply it with power to get started.  All other refined storage devices need to be connected to the controller to work."]
+			description: ["控制器是存储网络的核心。放置并为其供电吧。所有精致存储的设备需要连接控制器才能工作"]
 			dependencies: ["52B8A2DA9983266E"]
 			id: "2B79B094EF3EB0D8"
 			tasks: [{
@@ -128,7 +128,7 @@
 		{
 			x: -3.5d
 			y: -10.5d
-			description: ["Connect a disk drive to your network to hold the storage disks that actually contain your items.  The 4k Storage Disk holds 4000 items. There are Fluid Storage disks for storing fluids as well."]
+			description: ["把磁盘驱动器连接到网络，来放存储磁盘。4k存储磁盘可储存4000个物品。同时我们也有用来储存液体的液体存储磁盘。"]
 			dependencies: ["2B79B094EF3EB0D8"]
 			id: "616AA19F5D1EE1AA"
 			tasks: [
@@ -159,7 +159,7 @@
 		{
 			x: -6.5d
 			y: -10.5d
-			description: ["You can use a basic Grid to have access to your items in the network, but you can skip right to the crafting grid and be able to craft with items while they're still in your storage.  As your system gets larger you will likely want to begin to use cables to connect different parts."]
+			description: ["它不仅可以让你拿取物品，还能用让你直接使用网络里的物品进行合成。随着网络越来越大，你可能会想要用线缆连接各个部件"]
 			dependencies: ["21AD95D3E95B562E"]
 			id: "7D25258EBA0B3C50"
 			tasks: [
@@ -183,7 +183,7 @@
 		{
 			x: -6.5d
 			y: -9.0d
-			description: ["The importer and exporter can be connected to an inventory to automatically transfer items in and out of the network.  Configure the filters to control what they transfer.  Another very useful interface is the External Storage.  Attach that to an inventory to allow your system to store and use items outside itself.  Note: Consider attaching your exisisting storage drawer as external storage, drawers are considerably easier to make for bulk goods storage."]
+			description: ["连接到网络的输入面板/输出面板可以让物品自动进/出网络。过滤卡可以控制它们能调度的物品。外部存储面板也是很有用的接口。它可以将容器并入网络。 注：我们推荐使用抽屉作为容器。"]
 			dependencies: ["7D25258EBA0B3C50"]
 			id: "6C6E52A5964E2793"
 			tasks: [
@@ -229,7 +229,7 @@
 		{
 			x: -5.0d
 			y: -9.0d
-			description: ["Pretty straightforward: use these upgrades on your importer and exporters to help things flow faster.  Speed upgrades stack but only one stack upgrade applies."]
+			description: ["很简单：在输入面板/输出面板上使用这些升级，使物品流动更加快速。可以放很多速度升级，但堆叠升级只能放一个"]
 			dependencies: ["6C6E52A5964E2793"]
 			id: "4B753B8CA4C36C4D"
 			tasks: [
@@ -253,7 +253,7 @@
 		{
 			x: -3.5d
 			y: -9.0d
-			description: ["Your Refined storage can craft needed items for you using Patterns.  Use the Pattern Grid to create a pattern for your system to use."]
+			description: ["精致存储可以自动合成样板所标记的物品。使用样板终端来管理样板。"]
 			dependencies: ["4B753B8CA4C36C4D"]
 			id: "250F1B2A623A9269"
 			tasks: [
@@ -285,7 +285,7 @@
 		{
 			x: -3.5d
 			y: -7.5d
-			description: ["Once you have a pattern place it into a crafter for your system to use. If you search your system for an item you've taught it how to make you can instruct it to craft it for you if you're out.  If you also told it how to make the materials it needs to craft the item it will automatically craft what it needs to fill your request.  If not it will tell you what you're missing."]
+			description: ["合成仓可以通过样板自动合成，当你在网络中所要的物品有合成样板时，你可以给他一个合成任务。如果物品所需的材料也有合成样板，它会自动合成材料。如果不能合成，它会告诉你缺少了什么材料。"]
 			dependencies: ["250F1B2A623A9269"]
 			id: "3E512F339B4C4036"
 			tasks: [{
@@ -302,7 +302,7 @@
 		{
 			x: -5.0d
 			y: -7.5d
-			description: ["Want easier access to your main storage?  With the Wireless Transmitter and a Wireless crafting Grid you can access your storage without going to it.  By default the transmitter reaches to 16 blocks away but with the range upgrades it reaches up to 48.  Attach more transmitters to your network for even more coverage."]
+			description: ["你想更方便地访问网络吗？无线发送器和无线合成终端可以让你随时随地访问网络。默认情况下放送器的范围为半径16格，范围升级可以让其达到半径48格。连接更多的变送器到网络来扩大覆盖范围吧。"]
 			dependencies: ["4B753B8CA4C36C4D"]
 			id: "2DC8FA81466413BE"
 			tasks: [
@@ -339,7 +339,7 @@
 		{
 			x: -6.5d
 			y: -7.5d
-			description: ["For truly wireless network access even at large distances and across dimensions you need to use the Network Transmitter and Receivers.  Attach the Transmitter to your main network and place the receiver where you need access. Right click the Network Card on the receiver then place that card into the transmitter.  The receiver acts as the controller for the outpost and allows full access to the main network.  NOTE: The receiver and transmitter must BOTH be in loaded chunks to function.  Use your map to claim and force load the chunks they are in."]
+			description: ["要在远距离和跨维度的情况下实现无线访问网络需要用到网络变送器和网络接收器。将变送器连接到网络，把接收器放在你要访问网络的地方。用网络卡右键接收器后，将其放进变送器。接收器充当前哨的控制器，并允许完全访问主网络。 注：变送器和接收器都需要放在常加载区块才能使用。使用地图来认领区块并让其保持加载。"]
 			dependencies: ["2DC8FA81466413BE"]
 			id: "10BE5AF52C589D65"
 			tasks: [
@@ -381,7 +381,7 @@
 			x: -11.0d
 			y: -9.0d
 			shape: "octagon"
-			description: ["Now that you have mobs spawning and can move them wherever you want them it's time to build the piece that waits for them at the end of their journey.  The mob masher is a very powerful way to automatically kill mobs and still receive drops that are typically exclusive to player kills.  It's upgradeable for quicker kills. Simply turn it on with a redstone signal."]
+			description: ["你已经可以刷怪并能让怪物到你想要的地方，所以是时候来杀掉它们了。怪物捣碎器拥有强大的功能，它可以自动杀死怪物，并且属于被玩家杀死。升级可以使它杀的更快。打开它只需要一个红石信号。"]
 			dependencies: ["631CF8DED519EB4C"]
 			id: "1C85F76D98CA86FD"
 			tasks: [{
@@ -399,7 +399,7 @@
 			x: -14.0d
 			y: -12.0d
 			shape: "octagon"
-			description: ["The entity conveyor can be used to push mobs around horizontally.  Mobs CAN spawn on the conveyors making a simple darkroom spawner possible.  Note: The conveyor blocks allow light through so block light via other blocks around and below them."]
+			description: ["实体传送带可以用来水平移动怪物。怪物可以在它上面生成，所以你可以直接做暗室来刷怪。 注：实体传送带是透明方块，所以你需要用其他方块阻挡光线"]
 			dependencies: ["1EF5A021642E8B08"]
 			id: "3C71734B8311248C"
 			tasks: [{
@@ -417,7 +417,7 @@
 			x: -14.0d
 			y: -10.5d
 			shape: "octagon"
-			description: ["A different way to move your mobs around is with the mob fan.  This block allows vertical and horizontal movement with range upgrades available. Use this to keep flying mobs on the floor as well as push all mobs towards your killing mechanism."]
+			description: ["怪物风扇也可以移动怪物。你可以升级它的水平和垂直范围。可以用它把可以飞的怪物按在地上，然后集中处死。"]
 			dependencies: ["3C71734B8311248C"]
 			id: "3FECB2D5CEE73FE6"
 			tasks: [
@@ -452,7 +452,7 @@
 			x: -12.5d
 			y: -9.0d
 			shape: "octagon"
-			description: ["Once your mob masher is chewing through everything that spawns you need something that can pick up all of the loot and experience orbs.  The Absorption Hopper is the perfect solution. Note: While it cannot pick up through solid blocks it can pick up through the mob masher."]
+			description: ["你需要什么东西来收集掉落物和经验球，吸收漏斗是个很好的选择。 注：它不能透过实体方块拾取物品，但它可以透过怪物捣碎器拾取"]
 			dependencies: ["1C85F76D98CA86FD"]
 			id: "1FF2942AD05DEE51"
 			tasks: [
@@ -477,7 +477,7 @@
 			x: -12.5d
 			y: -10.5d
 			shape: "octagon"
-			description: ["Keep endermen in place with the Ender Inhibitor.  This prevents mobs within 8 blocks from teleporting.  Activate it with a right click."]
+			description: ["末影抑制器能让周围8格内的末影人不能瞬移。右键可以激活。"]
 			dependencies: ["3FECB2D5CEE73FE6"]
 			id: "20110C778E20B10D"
 			tasks: [{
@@ -495,7 +495,7 @@
 			x: -14.0d
 			y: -9.0d
 			shape: "octagon"
-			description: ["Experience actually takes up quite a lot of space.  The Singularity Tank can hold 32 buckets of fluid and the Jumbo Tank can hold a whopping 1024 buckets."]
+			description: ["存储经验需要不少空间。奇异水槽可以存储32桶液态经验，巨型水槽可以存储1024桶。"]
 			dependencies: ["1FF2942AD05DEE51"]
 			id: "4952C22A12346484"
 			tasks: [
@@ -520,7 +520,7 @@
 			x: -14.0d
 			y: -7.5d
 			shape: "octagon"
-			description: ["The XP Drain Singularity tank holds 32 buckets of fluid and comes with a drain on top that you can stand on to convert your player levels into liquid experience.  Use the XP Tap on the side of a tank with fluid experience inside to turn it back into experience orbs."]
+			description: ["地漏经验奇异水槽可储存32桶液态经验。其顶部有一个排水沟，站在上面会把玩家身上的经验漏进水槽。把经验水龙头放在储存液态经验的容器侧边可以放出经验球"]
 			dependencies: ["4952C22A12346484"]
 			id: "3272CDDE79DC22CC"
 			tasks: [
@@ -545,7 +545,7 @@
 			x: -11.0d
 			y: -10.5d
 			shape: "octagon"
-			description: ["Tinted Glass makes a useful building block for your mob farms.  Blocks light while still allowing you to see through and tough enough to withstand even wither explosions."]
+			description: ["挡光玻璃是很有用的建筑方块。它可以在阻挡光线的同时让你看见里面，并且可以抵御凋灵的爆炸。"]
 			dependencies: ["20110C778E20B10D"]
 			id: "631CF8DED519EB4C"
 			tasks: [{
@@ -563,7 +563,7 @@
 			x: -11.0d
 			y: -6.0d
 			shape: "octagon"
-			description: ["Take that spawn egg and put it into an Entity Spawner powered with Jelly Babies.  Turn the spawner on with a redstone signal and it will spawn mobs in a small area around it.  No more wandering the nether fortresses hunting for wither skeletons required!"]
+			description: ["在实体生成器内放置刷怪蛋和经验果冻宝宝。用红石信号启动刷怪，它会在它周围的一小块区域里刷怪。不用再到下界要塞刷凋灵骷髅咯！"]
 			dependencies: ["494D5157A7DF4C65"]
 			id: "5B39C8EE19F0ABB5"
 			tasks: [{
@@ -581,7 +581,7 @@
 			x: -12.5d
 			y: -7.5d
 			shape: "octagon"
-			description: ["Your fluid xp can be processed into jelly babies that you will need for the final key and can also be used to fuel a custom spawner."]
+			description: ["你可以用经验固化器来制作经验果冻宝宝，你将在实体生成器里用到它。"]
 			dependencies: ["3272CDDE79DC22CC"]
 			id: "21B58AA5352083EB"
 			tasks: [
@@ -603,12 +603,12 @@
 			}]
 		}
 		{
-			title: "Mob Eggs"
+			title: "刷怪蛋"
 			icon: "minecraft:zombie_spawn_egg"
 			x: -11.0d
 			y: -7.5d
 			shape: "octagon"
-			description: ["You can buy passive mob eggs from the market but when you want to target a certain hostile mob you need to make your own egg.  To do this find a wild version of the mob you want and right click it with a Mob Swab.  Take the used mob swab and craft it with a seed and a bucket of xp.  Feed the resulting GM chicken feed to a chicken to get your spawn egg."]
+			description: ["敌对生物的刷怪蛋你需要自己制作，其他生物的刷怪蛋可以在市场里购买。你得用怪物棉签右键怪物，再把它与一桶液态经验、小麦种子合到一起。将得到的转基因鸡饲料喂给鸡就可以得到你想要的刷怪蛋了。"]
 			dependencies: [
 				"21B58AA5352083EB"
 				"3BBF93D0AA4D22F6"
@@ -642,7 +642,7 @@
 			x: -12.5d
 			y: -12.0d
 			shape: "octagon"
-			description: ["There is more than one way to make a mob farm.  A Rotten Egg used on dirt or grass makes a 5x5 area of dreadful dirt that will spawn hostile mobs regardless of light level.  It needs a roof though as sunlight will burn it up.  Feed a chicken some cursed GM chicken feed to get the rotten egg."]
+			description: ["制作刷怪场的方式不止一种。用腐烂鸡蛋右键泥土或者草方块可以创造一个5x5的诅咒之土区域。当光照亮度为10以下时，诅咒之土区域会生成很多怪物，你需要盖个屋顶防止它燃烧。给鸡喂诅咒GM鸡饲料可以得到腐烂鸡蛋"]
 			dependencies: ["1EF5A021642E8B08"]
 			id: "20891AC353268071"
 			tasks: [
@@ -668,7 +668,7 @@
 			x: -11.0d
 			y: -12.0d
 			shape: "octagon"
-			description: ["If passive mobs are what you want a Golden Egg can be used to make a 5x5 patch of delightful dirt that will spawn lots of passive mobs even with you nearby.  Feed a chicken some nutritious chicken feed to get the golden egg."]
+			description: ["如果你需要友好生物，可以用金鸡蛋创造一个5x5的祈福之土区域，即使你在附近，也会产生很多友好生物。给鸡喂营养丰富鸡饲料可以得到金鸡蛋"]
 			dependencies: ["1EF5A021642E8B08"]
 			id: "03D3946B2ECAC9C7"
 			tasks: [
@@ -690,12 +690,12 @@
 			}]
 		}
 		{
-			title: "End Dimension"
+			title: "末地"
 			icon: "minecraft:end_portal_frame"
 			x: -20.0d
 			y: 0.0d
 			shape: "diamond"
-			description: ["One more collection completed. Here's your next key and just like before you need to find the door that matches your key to find the access. Go check it out and bring back a Dragon Egg and an Elytra."]
+			description: ["恭喜你又完成了一个集合，这是你的下把钥匙，和之前一样，你需要找到这个钥匙可以开启的入口。去里面探索并带个龙蛋和鞘翅回来。"]
 			dependencies: [
 				"343F8C4DBBBAE68B"
 				"36D6F5595DAD7EAC"
@@ -707,7 +707,7 @@
 			tasks: [{
 				id: "0D9EC3B51D6DF1CF"
 				type: "checkmark"
-				title: "Find the Birch"
+				title: "寻找白桦木"
 			}]
 			rewards: [{
 				id: "1520A0FF06673014"
@@ -716,10 +716,10 @@
 			}]
 		}
 		{
-			title: "Asphalt"
+			title: "沥青"
 			x: -24.0d
 			y: -1.5d
-			description: ["Asphalt Concrete makes for fantastic walkways as it increases your walking speed by 20%!  Thank you for doing all the hard work for me, now I can go be speedy speedy!"]
+			description: ["沥青混凝土组成了神奇的人行道，因为它可以增加20%的移动速度！感谢你为我做了这么困难的工作！现在我可以走得更快了！"]
 			dependencies: ["0CDE75D6916612E9"]
 			id: "7C8A2DE24A9768A8"
 			tasks: [{
@@ -735,10 +735,10 @@
 			}]
 		}
 		{
-			title: "Slime"
+			title: "史莱姆"
 			x: -22.0d
 			y: -3.0d
-			description: ["Melt some slime essence down and get me a bucket of the melted glop.  You might want to go take a bath afterwards."]
+			description: ["融化一些史莱姆精华，给我一个史莱姆桶。之后你可能需要去洗个澡"]
 			dependencies: ["13D53211FDE6CFDC"]
 			id: "343F8C4DBBBAE68B"
 			tasks: [{
@@ -761,11 +761,11 @@
 			]
 		}
 		{
-			title: "Distillation Tower"
+			title: "精馏塔"
 			icon: "immersivepetroleum:distillationtower"
 			x: -24.0d
 			y: -3.5d
-			description: ["Now that you have crude oil you need to refine it.  The distillation tower is a large multiblock that separates the crude oil into multiple byproducts.  It occasionally produces Bitumen which is the product I'm looking for, you can use the rest for whatever you like."]
+			description: ["现在你有了原油，你需要提炼它。精馏塔是一个可以把原油分离成多个副产物的多方块机构。它偶尔会产生沥青，这就是我在找的，至于剩下的产物就随你处置。"]
 			dependencies: ["5B7614C51E9AEA1E"]
 			id: "0CDE75D6916612E9"
 			tasks: [{
@@ -781,12 +781,12 @@
 			}]
 		}
 		{
-			title: "Pumpjack"
+			title: "磕头机！"
 			icon: "immersivepetroleum:pumpjack"
 			x: -24.0d
 			y: -5.5d
 			shape: "circle"
-			description: ["Once you've found oil build a Pumpjack inside the chunk where you found it. Once you've built it whack the bottom heavy engineering block to form the multiblock, give it power, a tank to output to and watch the oil materialize from thin air."]
+			description: ["你需要在发现石油的地方造一个钻井（磕头机）。搭建完成后，用工程师锤敲击第二层中的重型工程块来完成建造。给它能量和一个可以输出的油箱，然后就看着油凭空产生。"]
 			dependencies: ["0F199508052563A0"]
 			id: "5B7614C51E9AEA1E"
 			tasks: [{
@@ -803,7 +803,7 @@
 		{
 			x: -24.0d
 			y: -7.5d
-			description: ["Now you're going looking for oil.  A core sample drill will search the chunk it is placed in for a reservoir.  It needs power to operate and you will probably need to check more than one chunk so just take a charged up energy cell with you and place them together.  Right click on the drill to take the sample and don't try to figure out what is actually being sampled in the void.  I don't know either but there is oil out here. Note: Press F3 + G to show the chunk borders."]
+			description: ["现在，你需要去寻找石油。岩芯钻井将在被放置的区块中搜索储层。它需要电力才能运行而你可能需要检查多个区块，所以带上一个能量电池，将它们放在一起吧。右键点击进行取样，不要试图弄清楚虚空中取样的是什么。我也不知道，但是这里有石油。 注：F3+G可以显示区块边界。"]
 			dependencies: ["367A3DC97B553AF3"]
 			id: "0F199508052563A0"
 			tasks: [{
@@ -820,7 +820,7 @@
 		{
 			x: -22.0d
 			y: -11.0d
-			description: ["I hope you found some Soulium Ore in the nether.  If not, go get some, I'll wait here.  Kill mobs with the Soulium Dagger to gather souls in a soul jar.  It will generally take more than one to fill a jar but once they are full they can be used to craft seeds to grow the mobs essences just like the rest of your crops."]
+			description: ["我希望你有在下界中找到离魂矿石。如果没有的话，去找一些吧，我会在这等你。用离魂匕首杀死生物，它们的灵魂会被收集到灵魂瓶中。通常需要一个以上生物才能装满一个瓶子。但一旦装满了，它们就可以被用来制作种子，像种植其他作物一样种植生物精华。"]
 			dependencies: ["1C8CEE753D7E2278"]
 			id: "591B3C3A6531E902"
 			tasks: [
@@ -867,7 +867,7 @@
 		{
 			x: -20.0d
 			y: -9.0d
-			description: ["Time to upgrade your fancy crafting table again."]
+			description: ["是时候再升级你精英工作台了。"]
 			dependencies: ["1C8CEE753D7E2278"]
 			id: "51686BDABB064268"
 			tasks: [{
@@ -882,10 +882,10 @@
 			}]
 		}
 		{
-			title: "Spark"
+			title: "火花"
 			x: -18.0d
 			y: -9.0d
-			description: ["The agglomeration plate uses a large amount of mana for each craft so sparks work well to quickly deliver the volume of mana it needs.  Right click one spark on the plate and the other onto your mana pool."]
+			description: ["泰拉凝聚板制作泰拉钢需要使用大量魔力，而火花可以很好地快速传输所需的法力值。右键单击泰拉凝聚板上的一个火花，并点击连接你的魔力池。"]
 			dependencies: ["2709F8F66BE916EF"]
 			id: "06D7B02B20ABD7F5"
 			tasks: [{
@@ -904,7 +904,7 @@
 		{
 			x: -18.0d
 			y: -11.0d
-			description: ["Use the Terrestrial Agglomeration Plate to make Terrasteel.  Build the 3x3 base with 4 livingrock in the corners and center and fill the side spaces with the lapis blocks.  Place the plate on top of the central livingrock block."]
+			description: ["使用泰拉凝聚板来制作泰拉钢。将五块活石分别放在在角落和中心来组成3x3底座，并用青金石块填充四周。将泰拉凝聚板放在中间的活石的顶部。"]
 			dependencies: ["1C8CEE753D7E2278"]
 			id: "2709F8F66BE916EF"
 			tasks: [
@@ -933,10 +933,10 @@
 			}]
 		}
 		{
-			title: "Portal to Alfheim"
+			title: "精灵传送门"
 			x: -18.0d
 			y: -5.0d
-			description: ["You won't get to go visit the elves but building this portal will allow you to trade with them for some very special materials. The portal frame is a 5x5 square with the core in the center of the bottom, the glimmering livingwood in the center of each side and the top, and the rest of the frame built out of livingwood.  The pylons need to be placed above mana pools near the portal.  Right click on the core with your wand of the forest to activate.  The portal will consume mana to open and for every trade.  If the pools run out of mana the portal will close."]
+			description: ["你不会去拜访精灵，但是建造这个门可以让你与他们交易一些非常特殊的材料。门框是一个5x5的正方形，精灵门核心位于底部中心，微光活木位于每侧和顶部的中心，框架的其余部分由活木制成。自然水晶需要放置在传送门附近的魔力池上方。用你的森林魔杖右键单击核心以激活。传送门将消耗魔力来维持门的开启和进行每笔交易。如果魔力池的法力耗尽，传送门将关闭。"]
 			dependencies: ["77198D94DD4EB00C"]
 			id: "77B8C2CA22C960AC"
 			tasks: [
@@ -967,7 +967,7 @@
 		{
 			x: -18.0d
 			y: -3.0d
-			description: ["Now that your communication channel has been established get me some Pixie Dust."]
+			description: ["既然你和精灵的交流通道已经建立了，那么请给我一些精灵尘。"]
 			dependencies: ["77B8C2CA22C960AC"]
 			id: "36D6F5595DAD7EAC"
 			tasks: [{
@@ -993,7 +993,7 @@
 		{
 			x: -24.0d
 			y: -9.5d
-			description: ["Distributing power with cables gets cluttered as your systems and base grow so alongside your improved reactor lets get some wireless energy transfer going. Note: See Chapter 3 Image for help with the Ender Cell."]
+			description: ["随着你的系统和基地的扩大，使用电缆分配电力会变得杂乱无章，因此在你改进的反应堆旁边，可以用无线能量传输。 注：请参阅第三章参考以获取有关末影单元的帮助。"]
 			dependencies: [
 				"4D21619D207C58AB"
 				"08C055407026640E"
@@ -1027,7 +1027,7 @@
 		{
 			x: -20.0d
 			y: -5.0d
-			description: ["I hope you actually took the time to automate production of those seeds you crafted a while back. This key is pretty simple, but it won't be cheap."]
+			description: ["我希望你真的花时间去自动化生产你之前制作的那些种子。做到这点很简单，但不便宜。"]
 			dependencies: ["51686BDABB064268"]
 			id: "094634C273BAF0F6"
 			tasks: [{
@@ -1053,7 +1053,7 @@
 		{
 			x: -18.0d
 			y: -7.0d
-			description: ["Once you've built the platform and accumulated sufficient mana right click the materials onto the plate and stand back while it draws the mana and infuses the Terrasteel. Note: If you accidentally pick up the materials during the infusion process the mana transferred is lost."]
+			description: ["一旦你建立了平台并积累了足够的魔力，右键单击凝聚板上的材料并在它吸取法力灌注泰拉钢的时候退后。 注：如果你在灌注过程中不小心捡到了材料，转移的魔力就会丢失。"]
 			dependencies: ["06D7B02B20ABD7F5"]
 			id: "77198D94DD4EB00C"
 			tasks: [{
@@ -1068,11 +1068,11 @@
 			}]
 		}
 		{
-			title: "Crystaltine Block"
+			title: "晶素块"
 			x: -1.5d
 			y: -4.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d
@@ -1093,7 +1093,7 @@
 			x: -7.5d
 			y: -4.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d
@@ -1114,7 +1114,7 @@
 			x: -4.5d
 			y: -4.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d
@@ -1132,12 +1132,12 @@
 			}]
 		}
 		{
-			title: "Back from the Nether"
+			title: "下界归来"
 			icon: "minecraft:crying_obsidian"
 			x: -20.0d
 			y: -13.5d
 			shape: "octagon"
-			description: ["Looks like you survived the Nether.  Or maybe you didn't and keepInventory came in clutch.  Either way: you're back and we can get back to work.  Preparations for the next sphere access will include gathering souls, trading with elves, oil distillation, and even more elite crafting."]
+			description: ["看起来你在下界幸存下来。或者，也许你没有，但死亡不掉落保住了你的物品。无论如何：你回来了，我们可以回去工作了。进入下一个房间的准备工作将包括收集灵魂、与精灵交易、蒸馏油，甚至更多的精英合成。"]
 			dependencies: ["6F2E09F790E203EE"]
 			size: 1.5d
 			id: "1C8CEE753D7E2278"
@@ -1150,7 +1150,7 @@
 		{
 			x: -24.0d
 			y: -11.5d
-			description: ["Immersive Engineering is a power hungry mod.  Let's upgrade your power system again."]
+			description: ["沉浸工程（Immersive Engineering）是一个耗电的模组。让我们再次升级你的电力系统。"]
 			dependencies: ["1C8CEE753D7E2278"]
 			id: "4D21619D207C58AB"
 			tasks: [
@@ -1452,7 +1452,7 @@
 			x: -13.5d
 			y: 0.0d
 			shape: "octagon"
-			description: ["Craft the Powered Core and find all eleven ender eyes to activate the portal."]
+			description: ["制作充能核心，找到所有11只末影之眼来激活传送门。"]
 			dependencies: [
 				"479C55AC9D7F234C"
 				"08E6F2CE29388A54"
@@ -1492,7 +1492,7 @@
 			x: -12.5d
 			y: -4.5d
 			shape: "octagon"
-			description: ["You now have everything you need to spawn and kill the wither safely, repeatedly.  Have fun getting revenge for any times it has killed you in the past."]
+			description: ["你现在拥有了安全、反复地生成和杀死凋灵所需的一切。为它过去多次杀死你报仇，祝你玩得开心。"]
 			dependencies: ["5B39C8EE19F0ABB5"]
 			id: "73AFCCE20B737A74"
 			tasks: [{
@@ -1507,10 +1507,10 @@
 			}]
 		}
 		{
-			title: "Recipe"
+			title: "配方"
 			x: -9.0d
 			y: -7.5d
-			description: ["See the Chapter 3 \"Image\" for the GM Cicken Feed recipe."]
+			description: ["参阅第三章的指导图了解GM鸡饲料的配方。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			optional: true
@@ -1521,10 +1521,10 @@
 			}]
 		}
 		{
-			title: "Step by Step"
+			title: "一步步"
 			x: -25.5d
 			y: -9.5d
-			description: ["Look at the Chapter 3 \"Image\" to see a step by step illustration for how to use the Ender Gate and Ender Cell."]
+			description: ["参阅第三章的指导图逐步了解如何使用末影之门和末影单元。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			optional: true
@@ -1537,7 +1537,7 @@
 		{
 			x: -22.0d
 			y: -5.0d
-			description: ["The melting chamber uses power to melt down certain blocks or items into fluid."]
+			description: ["熔化室使用电力将某些块或物品熔化成流体。"]
 			dependencies: ["2CDDF6DC1054EA5B"]
 			dependency_requirement: "one_completed"
 			id: "13D53211FDE6CFDC"
@@ -1556,14 +1556,14 @@
 			x: -5.0d
 			y: -13.5d
 			shape: "octagon"
-			description: ["You should seriously consider building yourself a high tech Refined Storage system to help you keep your increasingly broad array of resources organized and useful while adding some convenient autocrafting on demand capabilities."]
+			description: ["你应该认真考虑为自己创建一个高科技的精致存储（Refined Storage）系统，以帮助您保持日益广泛的资源有序和有用，同时添加一些方便的按需自动制作功能。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			id: "5591290A089C1583"
 			tasks: [{
 				id: "59D5E53281B2784F"
 				type: "checkmark"
-				title: "Refined Storage"
+				title: "精致储存"
 			}]
 			rewards: [
 				{
@@ -1586,7 +1586,7 @@
 		{
 			x: -5.0d
 			y: -10.5d
-			description: ["Construction and Destruction Cores are used in the parts that allow the system to interface with the physical world."]
+			description: ["成型核心和破坏核心是用于系统与物理世界交互的一部分。"]
 			dependencies: ["616AA19F5D1EE1AA"]
 			id: "21AD95D3E95B562E"
 			tasks: [
@@ -1610,20 +1610,20 @@
 		{
 			x: -12.5d
 			y: -13.5d
-			description: ["You don't need to build this stuff to craft the keys to the next dimension but you will need it to finish the pack and you have access to everything you need to automate the killing of all-of-the-things right now."]
+			description: ["你现在不需要它来获取下个维度的钥匙，但你可以从现在开始自动化处死所有的怪物来获取你需要的东西来完成最终物品"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			id: "1EF5A021642E8B08"
 			tasks: [{
 				id: "0B2A6BBBD28EDDC6"
 				type: "checkmark"
-				title: "Mob Grinding Utils"
+				title: "怪物粉碎工具"
 			}]
 		}
 		{
 			x: -22.0d
 			y: -7.0d
-			description: ["You were killing those slimes with the Soulium Dagger you just made weren't you?"]
+			description: ["你在用你刚刚制造的灵魂匕首杀死那些史莱姆，难道不是吗？"]
 			dependencies: ["6E99684849769793"]
 			id: "2CDDF6DC1054EA5B"
 			tasks: [{
@@ -1641,7 +1641,7 @@
 			x: -7.5d
 			y: -1.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d
@@ -1662,7 +1662,7 @@
 			x: -4.5d
 			y: -1.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d
@@ -1677,7 +1677,7 @@
 			x: -1.5d
 			y: -1.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d
@@ -1692,7 +1692,7 @@
 			x: -6.0d
 			y: 1.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d
@@ -1707,7 +1707,7 @@
 			x: -3.0d
 			y: 1.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["1C8CEE753D7E2278"]
 			size: 3.0d

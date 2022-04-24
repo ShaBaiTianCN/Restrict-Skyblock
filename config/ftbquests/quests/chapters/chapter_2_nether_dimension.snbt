@@ -3,19 +3,19 @@
 	group: ""
 	order_index: 2
 	filename: "chapter_2_nether_dimension"
-	title: "Chapter 2 \"Nether Dimension\""
+	title: "第二章 \"下界维度\""
 	icon: "minecraft:crying_obsidian"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Mining Tour"
+			title: "采矿时间到！"
 			x: -34.5d
 			y: -3.0d
 			shape: "octagon"
 			description: [
-				"How did it feel it to be digging deep underground after being up in the sky for so long?  Your next goals involve establishing automation with Mystical Agriculture and Pedestals so that you don't need to keep going on mining expeditions."
-				"I've got some stuff from Simple Storage as reward to help you stay organized."
+			    "在挖矿维度挖了那么久之后，来到地狱挖矿感觉如何？你的下一项目标是使用神秘农业与基座模组进行自动化产矿,这样你就不用亲身犯险挖矿了。"
+			    "我添加了简易网络存储模组，这样能让你的物品井井有条。"
 			]
 			dependencies: ["70F522DE6A0D859A"]
 			hide: true
@@ -65,7 +65,7 @@
 			icon: "mysticalagriculture:inferium_seeds"
 			x: -24.5d
 			y: 1.0d
-			description: ["Inferium seeds are the primary way to get the essences you need.  They can be grown on any farmland but infusing the farmland with higher tiers of essence helps your plants grow faster."]
+			description: ["下级种子是你获得需要的精华的主要途径。它们虽然可以在任何种类的耕地上生长，但是耕地的等级越高，生长速度越快。"]
 			dependencies: ["036630BB8E2F1AB3"]
 			id: "7DDF2C067830FCA9"
 			tasks: [{
@@ -90,7 +90,7 @@
 		{
 			x: -27.0d
 			y: -2.0d
-			description: ["Hopefully you have a steady supply of Inferium growing because it's time to start using it.  Mystical Agriculture allows you to grow a wide variety of materials and drops once you've gathered a few to infuse into a special seed.  You use the infusion crystal to condense your inferium to make higher level materials.  Prosperity Seed Base is the beginning of all of your resource crops, make a few to get started."]
+			description: ["希望你已经有稳定的下级精华产出来供你使用。神秘农业可以让你种出各种材料和掉落物。只要你先获取几个然后注入活化种子基底。你可以使用注魔水晶来把你的下级精华转化成更高级的材料。活化种子基底是资源作物基础，制作一些活化种子来开始吧。"]
 			dependencies: ["56837C137A4EF95E"]
 			id: "036630BB8E2F1AB3"
 			tasks: [
@@ -130,7 +130,7 @@
 			x: -27.0d
 			y: 0.0d
 			shape: "circle"
-			description: ["Place the Infusion Altar in the world and you'll see 8 ghost images around it indicating where to place the Infusion Pedestals. Place the seed base on the altar and the infusion materials on the pedestals (order does not matter) then give the altar a redstone signal to begin the infusion."]
+			description: ["把注魔祭坛放下来之后，它的周围会出现8个投影用来指示注魔基座的位置。在注魔祭坛上放种子基底，周围的8个基座上面放注魔材料（顺序随意），放好之后给注魔祭坛一个红石信号就会开始注魔。"]
 			dependencies: ["036630BB8E2F1AB3"]
 			id: "4CC327262B75278F"
 			tasks: [
@@ -153,11 +153,11 @@
 			}]
 		}
 		{
-			title: "Tier 1 Seeds"
+			title: "一级种子"
 			x: -27.0d
 			y: 1.8d
 			shape: "octagon"
-			description: ["Basic Tier 1 seeds include common resources and elemental essences."]
+			description: ["一级种子可以生产一些常见物资和元素的精华。"]
 			dependencies: ["4CC327262B75278F"]
 			id: "67EF84AEBED2AFC3"
 			tasks: [
@@ -207,11 +207,11 @@
 			]
 		}
 		{
-			title: "Tier 3 Seeds"
+			title: "三级种子"
 			x: -27.0d
 			y: 5.4d
 			shape: "octagon"
-			description: ["Iron and redstone can be yours in abundance once you begin crafting Tier 3 seeds."]
+			description: ["合成出三级种子之后就可以获取大量的铁和红石了。"]
 			dependencies: ["0B2AA190F2D1DC90"]
 			id: "74B9FFF2BD24E6DD"
 			tasks: [
@@ -235,7 +235,7 @@
 		{
 			x: -37.0d
 			y: 0.0d
-			description: ["The Botanist's basic tool is the Wand of the Forest.  Use it to link your flowers and spreaders and shift right click in the air to change its function so you can see up to date status of your mana systems."]
+			description: ["森林法杖是植物魔法最基础的工具。它可以在你的花与魔力发射器之间建立连接。面向空气右键可以更改它的功能。用法杖不断右键设备可以实时看见其中魔力的状态"]
 			dependencies: ["56837C137A4EF95E"]
 			id: "58D4CCE814BF0661"
 			tasks: [{
@@ -264,10 +264,10 @@
 			]
 		}
 		{
-			title: "Endoflame"
+			title: "火红莲"
 			x: -37.0d
 			y: 1.5d
-			description: ["The endoflame is a good place to start for mana generation.  It consumes any fuel type items in a 7x7x7 area around it and burns it to generate mana."]
+			description: ["火红莲是入门时产生魔力的首选。它会自动燃烧周围7x7x7范围内掉落的燃料并产生魔力。"]
 			dependencies: ["58D4CCE814BF0661"]
 			id: "6EFA0E3398F1F0FA"
 			tasks: [{
@@ -292,7 +292,7 @@
 		{
 			x: -37.0d
 			y: 3.0d
-			description: ["Mana Spreaders collect the mana from your generating flowers and transfer it to and from mana pools so that your functioning flora have the mana they need."]
+			description: ["魔力发射器可以从你的产能花中收集魔力并转移到魔力池中。这样你的功能花便会获得足够的能量。"]
 			dependencies: ["6EFA0E3398F1F0FA"]
 			id: "7BB75D86EFAC2095"
 			tasks: [
@@ -329,10 +329,10 @@
 			]
 		}
 		{
-			title: "Mana Items"
+			title: "注魔物品"
 			x: -37.0d
 			y: 6.0d
-			description: ["Once you have some mana in a pool you can infuse that mana into some basic materials you will use throughout your crafting in Botania."]
+			description: ["产生魔力之后你便可以尝试将魔力注入到一些基本材料中。注魔材料会在合成植物魔法的物品时被用到。"]
 			dependencies: ["25753015E92D2DD1"]
 			id: "2709F0E3B7E2652C"
 			tasks: [
@@ -378,7 +378,7 @@
 		{
 			x: -37.0d
 			y: 7.5d
-			description: ["The more powerful mana generating flowers and many functional flowers use runes to craft.  Supply mana to the Runic Altar by directing a mana spreader with a source of mana to it. NOTE: Runes used at the altar to create more advanced runes are NOT consumed while runes used to create flowers in the petal apothecary ARE consumed."]
+			description: ["高级产能花和许多的功能花都需要符文来合成。通过让一个魔力发射器向符文祭坛发射魔力来给符文祭坛供能。 注：在合成更高级符文的时候，符文并不会被消耗。然而在合成各种花的时候符文是会被消耗的。"]
 			dependencies: ["2709F0E3B7E2652C"]
 			id: "328B82259E40EBCC"
 			tasks: [{
@@ -393,11 +393,11 @@
 			}]
 		}
 		{
-			title: "Rune of Water"
+			title: "水之符文"
 			x: -37.0d
 			y: 9.0d
 			shape: "hexagon"
-			description: ["Imagine you're preparing for the nether by infusing yourself with the energy of water. Craft runes by dropping the required ingredients on the altar and waiting for it to charge. Once the altar is ready right click with the Wand of the Forest to create the rune."]
+			description: ["想象一下，你为自己注入水之能量，为去往下界做准备。把合成符文所需的物品放到祭坛上等待充能。祭坛合成结束后，用森林法杖右键祭坛来制作出符文。"]
 			dependencies: ["328B82259E40EBCC"]
 			id: "4AD347CCD982F0A5"
 			tasks: [{
@@ -420,11 +420,11 @@
 			]
 		}
 		{
-			title: "Blast Furnace"
+			title: "高炉"
 			icon: "immersiveengineering:blast_furnace"
 			x: -34.5d
 			y: 0.0d
-			description: ["Steel requires much higher temperatures than our basic furnace can reach so make a Blast Furnace.  Build a 3x3x3 cube out of Blast Brick and whack the center block of any side to form the multi block."]
+			description: ["钢所需要的温度比普通熔炉能够提供的温度要高得多，所以你需要做一个高炉。用高炉砖搭一个3x3x3的立方体，用工程师锤右键来形成多方块结构。"]
 			dependencies: ["56837C137A4EF95E"]
 			id: "7397AD7E44C62E2F"
 			tasks: [{
@@ -448,11 +448,11 @@
 			]
 		}
 		{
-			title: "Advanced Blast Furnace"
+			title: "强化高炉"
 			icon: "immersiveengineering:advanced_blast_furnace"
 			x: -34.5d
 			y: 2.0d
-			description: ["The Improved Blast Furnace is a better way of making steel.  It allows automation of inputs and outputs as well as the ability to attach powered Blast Furnace Preheaters to speed up the process."]
+			description: ["强化高炉是炼钢的更好方法。它可以自动输入或输入。同时，它还可以用高炉鼓风机来加速。"]
 			dependencies: ["7397AD7E44C62E2F"]
 			id: "4DFB2163866E119C"
 			tasks: [
@@ -489,11 +489,11 @@
 			]
 		}
 		{
-			title: "Squeezer"
+			title: "挤压机"
 			icon: "immersiveengineering:squeezer"
 			x: -34.5d
 			y: 3.5d
-			description: ["The Industrial Squeezer is another 3x3x3 multiblock, but this time you may want to use the projector or the manual to see how to put it together.  Once you've built it use your engineer's hammer to whack the central wooden barrel from the side with the engineering blocks to form the multiblock. Now you can make plant oil."]
+			description: ["工业挤压机是另一个3x3x3多方块结构，但这一次，你可能会想使用投影仪或手册来看看如何组装它。搭建完成后，用工程师锤敲击有工程块的一侧的中心处的木桶的侧面，形成多方块结构。现在你就可以做植物油了。"]
 			dependencies: [
 				"4DFB2163866E119C"
 				"79D80DEFD58E2B80"
@@ -560,11 +560,11 @@
 			]
 		}
 		{
-			title: "Fermenter"
+			title: "发酵机"
 			icon: "immersiveengineering:fermenter"
 			x: -34.5d
 			y: 5.4d
-			description: ["Your next Multiblock is a Fermenter to turn some of your fruits, grains, and vegetables into ethanol. Look inside the Engineer's manual under Heavy Machinery to find the materials you'll need to build."]
+			description: ["你的下一个多方块结构是一个发酵机，用于将你的一些水果、谷物和蔬菜转化为乙醇。查看工程师手册的重型机器章节来找到建造所需材料。"]
 			dependencies: ["17D305D1ECC51A75"]
 			id: "6DF25055AD310618"
 			tasks: [{
@@ -586,11 +586,11 @@
 			]
 		}
 		{
-			title: "Bio Diesel"
+			title: "生物柴油"
 			x: -34.5d
 			y: 9.0d
 			shape: "hexagon"
-			description: ["Finally, time to build the Refinery. Pipe your ethanol and plant oil into the Refinery to produce Biodiesel to get one of the four keys to the Nether."]
+			description: ["最后，是时候建造炼油厂了。将乙醇和植物油输送到炼油厂来生产生物柴油，以完成前往下界的四个关键之一。"]
 			dependencies: ["704B814A6A757A1A"]
 			id: "262BEEE6D86950F4"
 			tasks: [{
@@ -627,7 +627,7 @@
 			icon: "botania:fel_pumpkin"
 			x: -32.0d
 			y: 0.0d
-			description: ["This pumpkin head spawns a blaze when placed on top of two iron bars.  Use these to get the blaze powder you'll need to progress until you can get into the nether."]
+			description: ["这个南瓜头放在两个铁栅栏上会生成一个烈焰人。使用这个方法来获得烈焰粉，你需要继续发展，直到你能进入地狱。"]
 			dependencies: ["56837C137A4EF95E"]
 			id: "75CDF7F4EC6A47E5"
 			tasks: [
@@ -658,10 +658,10 @@
 			]
 		}
 		{
-			title: "Dielectric"
+			title: "电介质"
 			x: -32.0d
 			y: 1.8d
-			description: ["Now is a good time to start building up your power systems.  You'll be using Powah so get started by making some of the basic items you'll be needing."]
+			description: ["现在是开始建立电力系统的好时机。你将使用Powah，所以开始制作一些你会需要到的基础物品吧。"]
 			dependencies: ["75CDF7F4EC6A47E5"]
 			id: "1744703FA10CFE72"
 			tasks: [
@@ -701,7 +701,7 @@
 			icon: "powah:furnator_starter"
 			x: -32.0d
 			y: 3.6d
-			description: ["Powah's machines begin at Starter tier and can be upgraded to make more power as you need it."]
+			description: ["开始先做Powah的初级机器，可以根据需要升级以产生更多能量。"]
 			dependencies: ["1744703FA10CFE72"]
 			id: "79D80DEFD58E2B80"
 			tasks: [
@@ -737,11 +737,11 @@
 			]
 		}
 		{
-			title: "Machines"
+			title: "机器们"
 			icon: "cyclic:harvester"
 			x: -29.5d
 			y: 2.5d
-			description: ["The Harvester farms the crops in front of it, replanting the seeds after breaking the crop.  The Collector picks up any drops in range and stores them internally.  Pipes can be used to funnel these resources into the Crafter in order to automatically process your crops into the items you need. Higher tiers of crafters can store more recipes."]
+			description: ["收割机会在前面种植作物，在收割作物后重新播种。收集器会收集范围内的所有掉落物，并将其储存到内部。可以用管道将这些资源传输到合成器中，以便将作物自动加工成所需的物品。更高等级的合成器可以储存更多的配方。"]
 			dependencies: [
 				"648AACB9DAE3A8EF"
 				"79D80DEFD58E2B80"
@@ -773,7 +773,7 @@
 		{
 			x: -27.0d
 			y: 7.5d
-			description: ["As you begin to need more of the higher essences the 1000 uses available from each Infusion Crystal begin to look awfully limited.  It's a big investment to craft but it will pay off with the convenience of being able to use it in the auto crafter so you no longer need to condense stack after stack after stack..."]
+			description: ["当你开始需要更多更高级的精华时，每种注魔水晶的1000可使用次数看起来就非常有限。这是一个很大的投资，但它会回报你能够在使用自动合成器变得便利，所以你将不再需要一组接着一组的合成了..."]
 			dependencies: ["74B9FFF2BD24E6DD"]
 			id: "1D49ACCBA05BCC16"
 			tasks: [{
@@ -792,7 +792,7 @@
 			x: -29.5d
 			y: 9.0d
 			shape: "hexagon"
-			description: ["You're not the only one who needs ever growing power systems.  Make me a Uraninite seed."]
+			description: ["你不是唯一一个需要不断发展电力系统的人。为我做一个晶质铀种子吧。"]
 			dependencies: ["1D49ACCBA05BCC16"]
 			id: "179CEC526F9A020B"
 			tasks: [{
@@ -808,11 +808,11 @@
 			}]
 		}
 		{
-			title: "Block of Energized Steel"
+			title: "充能钢块"
 			x: -32.0d
 			y: 9.0d
 			shape: "hexagon"
-			description: ["Create Energized Steel by right clicking the energizing orb with one iron and one gold ingot.  Make a block of this for your next key item."]
+			description: ["分别用铁锭和金锭右键充能台来制作充能钢锭。制作一个充能钢块，这是后续的关键物品。"]
 			dependencies: ["6C208086DE756B42"]
 			id: "2BF02794ED464765"
 			tasks: [{
@@ -828,10 +828,10 @@
 			}]
 		}
 		{
-			title: "Energizing"
+			title: "充能"
 			x: -32.0d
 			y: 7.2d
-			description: ["You'll need that power to begin energizing materials for your more advanced tiers of Powah machines as well as for more materials to craft the Thing for the end of the pack.  The Energizing Orb itself does not take power but it needs energizing rods to function and the rods do require power.  Higher tier rods will energize faster."]
+			description: ["为了制作更高级的Powah机器，你需要这种能量来充能材料，以及更多的材料来制作完成整合包的东西。充能台本身不消耗能量，但它需要充能棒才能发挥作用，而充能棒的确需要能量。更高等级的充能棒将更快地充能。"]
 			dependencies: ["5193265366B69F6E"]
 			id: "6C208086DE756B42"
 			tasks: [
@@ -853,10 +853,10 @@
 			}]
 		}
 		{
-			title: "Enchantment"
+			title: "附魔"
 			x: -29.5d
 			y: 7.0d
-			description: ["You've been so helpful lately I decided to help you back.  Make me a special Honeycomb block and I'll give you a new catalyst that I'm sure you'll find useful."]
+			description: ["你最近非常乐于助人，我决定也反过来帮助你。给我做一个特殊的蜜脾块，我会给你一个新的催化剂，我相信你会发现这很有用。"]
 			dependencies: ["048A87FD6AE06D92"]
 			id: "199EE9EBB8404ED8"
 			tasks: [
@@ -881,7 +881,7 @@
 				{
 					id: "7B296E1B3CDF4F91"
 					type: "command"
-					title: "Catalyst"
+					title: "催化剂"
 					icon: "oneblock:nihilo_catalyst"
 					command: "/give @p oneblock:nihilo_catalyst{oblevel:1000000}"
 					player_command: false
@@ -889,11 +889,11 @@
 			]
 		}
 		{
-			title: "Pedestals"
+			title: "基座"
 			icon: "pedestals:pedestal/stone333"
 			x: -29.5d
 			y: 5.5d
-			description: ["Pedestals are incredibly versatile and powerful tools to help you with your automation systems.  Hold an upgrade in your off hand to apply it to the pedestal.  The Fertilizer upgrade woks on the 3x3 area around it by default but enchanting the upgrade can extend the range and speed."]
+			description: ["基座是极其通用且功能强大的工具，它可以帮助你使用自动化系统。将升级放在副手并右键可将其放在基座上。默认情况下，肥料升级的工作范围是周围的3×3区域，但附魔可以扩大范围和提升速度。"]
 			dependencies: ["1D6458ACD9F69AF7"]
 			id: "048A87FD6AE06D92"
 			tasks: [
@@ -959,11 +959,11 @@
 			]
 		}
 		{
-			title: "Tier 2 Seeds"
+			title: "二级种子"
 			x: -27.0d
 			y: 3.6d
 			shape: "octagon"
-			description: ["These are the two Tier 2 seeds that will be particularly useful to help you through this chapter."]
+			description: ["这是两个二级种子，它们对于帮助你完成本章特别有用。"]
 			dependencies: ["67EF84AEBED2AFC3"]
 			id: "0B2AA190F2D1DC90"
 			tasks: [
@@ -985,7 +985,7 @@
 			}]
 		}
 		{
-			title: "Tertium"
+			title: "中级精华"
 			icon: "mysticalagriculture:tertium_essence"
 			x: -24.5d
 			y: 4.0d
@@ -1005,11 +1005,11 @@
 			}]
 		}
 		{
-			title: "Automation Mystical"
+			title: "神秘农业自动化"
 			x: -29.5d
 			y: 1.0d
 			shape: "octagon"
-			description: ["Now that you have power and valuable crops that you will need massive quantities of it's a good time to expand your automation beyond botany pots. Look at Chapter 2 Image"]
+			description: ["既然你有了电力和珍贵的作物，你将会需要大量的精华，这是把自动化扩展到植物盆之外的好时机了。看一下第二章的指导图"]
 			dependencies: ["4CC327262B75278F"]
 			id: "648AACB9DAE3A8EF"
 			tasks: [{
@@ -1018,11 +1018,11 @@
 			}]
 		}
 		{
-			title: "Red Fertilizer"
+			title: "红肥"
 			icon: "farmingforblockheads:red_fertilizer"
 			x: -29.5d
 			y: 4.0d
-			description: ["Use Red Fertilizer on farmland to significantly speed up the growth rate of crops."]
+			description: ["在农田上使用红肥可以显著加快作物的生长速度。"]
 			dependencies: ["6010F100DE68DCA3"]
 			id: "1D6458ACD9F69AF7"
 			tasks: [{
@@ -1039,11 +1039,11 @@
 			}]
 		}
 		{
-			title: "Automated Mana Production"
+			title: "自动化魔力生产"
 			x: -37.0d
 			y: 4.5d
 			shape: "circle"
-			description: ["Throwing coal at your flowers requires a level of attention I wouldn't want to maintain for long. These flowers are very easy to automate though so you won't have to.  See the Chapter 2 Image for a simple setup."]
+			description: ["需要持续关注来向你的花投掷煤炭，但我不想长时间看着。这些花非常容易自动化，虽然你也不一定要这样做。相关的简单装置，请参照第二章的指导图。"]
 			dependencies: ["7BB75D86EFAC2095"]
 			id: "25753015E92D2DD1"
 			tasks: [
@@ -1073,12 +1073,12 @@
 			}]
 		}
 		{
-			title: "Nether Dimension"
+			title: "下界维度"
 			icon: "minecraft:crying_obsidian"
 			x: -33.0d
 			y: 11.0d
 			shape: "diamond"
-			description: ["You've prepared 4 more bits for me. Take this key and find the sphere with the matching door to gain access to the Nether.  BRING THE WAYSTONE!!!  This time you're taking a one way trip and I think you might want some way to get home."]
+			description: ["你又为我准备了4件物品。拿着这把钥匙，找到对应门的岛屿来进入下界。带上指路石！！！这次你要进行单程旅行，我想你可能需要一些回家的方法。"]
 			dependencies: [
 				"179CEC526F9A020B"
 				"4AD347CCD982F0A5"
@@ -1091,7 +1091,7 @@
 			tasks: [{
 				id: "566D8EE3C04A4190"
 				type: "checkmark"
-				title: "Find the Dark Oak"
+				title: "寻找深色橡木"
 			}]
 			rewards: [
 				{
@@ -1110,7 +1110,7 @@
 			icon: "powah:reactor_starter"
 			x: -32.0d
 			y: 5.4d
-			description: ["When you're ready for more power than the furnace type generators can provide it's time to build a Reactor. NOTE: See Image for Chapter 2 and the Powah guide book for more information on how to build and use the reactor. The Reactor Blocks DON'T UPGRADE.  Craft the correct level to avoid wasting your resources!"]
+			description: ["当您准备好获得比熔炉发电机更多的电力时，是时候建造反应堆了。 注：有关如何建造和使用反应堆的更多信息，请参照第二章的指导图和Powah手册。反应堆不能升级，制作正确的等级，避免浪费你的资源！"]
 			dependencies: ["79D80DEFD58E2B80"]
 			id: "5193265366B69F6E"
 			tasks: [{
@@ -1137,7 +1137,7 @@
 			x: -25.5d
 			y: 12.0d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["56837C137A4EF95E"]
 			size: 3.0d
@@ -1158,7 +1158,7 @@
 			x: -22.5d
 			y: 12.0d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["56837C137A4EF95E"]
 			size: 3.0d
@@ -1179,7 +1179,7 @@
 			x: -24.0d
 			y: 9.5d
 			shape: "octagon"
-			description: ["This is another one of the 15 different items you will need to make my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品之一。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["56837C137A4EF95E"]
 			size: 3.0d
@@ -1199,7 +1199,7 @@
 		{
 			x: -34.5d
 			y: 7.2d
-			description: ["The next big machine needs an alloy of silver and gold.  Build a 2x2x2 cube out of the kiln blocks and alloy some electrum."]
+			description: ["下一台大机器需要银和金的合金。用窑砖建造一个2x2x2的立方体，并合金一些琥珀金。"]
 			dependencies: ["6DF25055AD310618"]
 			id: "704B814A6A757A1A"
 			tasks: [
@@ -1222,7 +1222,7 @@
 			}]
 		}
 		{
-			title: "Prudentium"
+			title: "初级精华"
 			x: -24.5d
 			y: 2.5d
 			dependencies: ["7DDF2C067830FCA9"]
@@ -1248,7 +1248,7 @@
 			tasks: [{
 				id: "0B0F6D78AC753DA3"
 				type: "item"
-				title: "Imperium"
+				title: "高级精华"
 				item: "mysticalagriculture:imperium_essence"
 				count: 16L
 			}]

@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 0
 	filename: "chapter_1_mining_dimension"
-	title: "Chapter 1 \"Mining Dimension\""
+	title: "第一章 \"挖矿维度\""
 	icon: "mining_dimension:teleporter"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -23,7 +23,7 @@
 		{
 			x: 6.5d
 			y: -6.5d
-			description: ["Botania is a very expansive tech themed magic mod full of lovely flowers.  For now we're just going to scratch the surface and to do that you need some Floral fertilizer made of bonemeal and red dye."]
+			description: ["植物魔法是一个充满可爱花朵、披着魔法外衣的科技类模组。现在我们将要掀开她美丽的外衣，看清本质，想要做到这一点，你需要一些由骨粉和红色染料制成的花肥。"]
 			dependencies: ["5BFEAE583573EE37"]
 			id: "7FBA2A2906136819"
 			tasks: [{
@@ -61,10 +61,10 @@
 			]
 		}
 		{
-			title: "White Mystical Flower"
+			title: "白色神秘花"
 			x: 8.0d
 			y: -6.5d
-			description: ["Using that fertilizer on grass will grow three or four random mystical flowers.   There are 16 colors each used for different recipes.  The one we need now is White.  NOTE: Now that you have mystical flowers you can crush their petals with the Pestle and Mortar to make dyes."]
+			description: ["对着草地使用花肥，可以生长出三到四朵神秘花，一共有16种不同颜色的神秘花，现在我们需要的是白色的那个。 注：现在你有了神秘花就可以用杵和臼碾碎他们的花瓣来制作染料。"]
 			dependencies: ["7FBA2A2906136819"]
 			id: "1C52F8E7402C44B0"
 			tasks: [{
@@ -81,7 +81,7 @@
 		{
 			x: 11.0d
 			y: -6.5d
-			description: ["Most of the useful flowers get crafted by throwing the materials into the water filled petal apothecary."]
+			description: ["大多数植物魔法中有用的花朵都是通过将这些材料扔进花药台中制作而成的。"]
 			dependencies: ["7395D4C17D0D69E6"]
 			id: "085231CFCB736C50"
 			tasks: [{
@@ -96,10 +96,10 @@
 			}]
 		}
 		{
-			title: "I`m not Daisy Duck"
+			title: "我不是只黛丝鸭"
 			x: 12.5d
 			y: -6.5d
-			description: ["Make your first functional flower by filling the petal apothecary with water then tossing in 4 white petals.  If the recipe is valid you will see an image of the flower. Toss in a wheat seed to complete it and get your flower!"]
+			description: ["把一桶水倒进花药台，然后投入4片白色神秘花瓣，来制作你的第一朵功能花。如果你的配方是有效的，你会看到将要合成的花的图像。再扔一个小麦种子，就可以完成制作，得到你的花！"]
 			dependencies: ["085231CFCB736C50"]
 			id: "6FE6147FE00D1BB3"
 			tasks: [{
@@ -121,10 +121,10 @@
 			]
 		}
 		{
-			title: "Convert"
+			title: "转变"
 			x: 14.0d
 			y: -6.5d
-			description: ["Place the Pure Daisy in the world and it will slowly convert the 8 blocks around it.  Stone converts to livingrock and logs convert to livingwood.  There are a few other conversions but these are all you need for now."]
+			description: ["将白雏菊放置在世界中，它可以对自己周围的八个方块进行转变，例如将石头变为活石、将原木变为活木。当然还有其他一些物品可以转换，但你现在只需这些。"]
 			dependencies: ["6FE6147FE00D1BB3"]
 			id: "3A813C905CC2FAFE"
 			tasks: [
@@ -151,7 +151,7 @@
 			x: 15.5d
 			y: -6.5d
 			shape: "hexagon"
-			description: ["This key is pretty simple: make me a Livingrock Brick."]
+			description: ["这个任务相当简单：给我做个活石砖。"]
 			dependencies: ["3A813C905CC2FAFE"]
 			id: "5DC00DC564F1266B"
 			tasks: [{
@@ -175,10 +175,10 @@
 			]
 		}
 		{
-			title: "Black Dye"
+			title: "黑色染料"
 			x: 9.5d
 			y: -5.0d
-			description: ["You were probably unsually excited when you finally got to make that basic crafting bench.  Time to upgrade it.  If you haven't gotten a Black Mystical Flower yet you might want to do that first.  But, feel free to make a squid farm for the dye if you like doing things the hard way."]
+			description: ["当你最终制作完基础的工作台时，你可能会非常激动。但是时候升级它了！你需要先得到黑色神秘花，如果你还没有的话。但是如果你愿意使用更难的方式获取的话，当然也可以考虑制作鱿鱼农场来获取黑色染料。"]
 			dependencies: ["7FBA2A2906136819"]
 			id: "107C2AD02FC20A28"
 			tasks: [{
@@ -194,10 +194,10 @@
 			}]
 		}
 		{
-			title: "Extended Crafting"
+			title: "合成拓展"
 			x: 11.0d
 			y: -5.0d
-			description: ["Extended Crafting adds special crafting tables that go beyond the typical 3x3 grid but the basic table will be enough for now."]
+			description: ["合成拓展添加了几个网格大于3x3的特殊工作台，但现在基础工作台足够了。"]
 			dependencies: ["107C2AD02FC20A28"]
 			id: "546B73272169D585"
 			tasks: [
@@ -224,7 +224,7 @@
 		{
 			x: 12.5d
 			y: -5.0d
-			description: ["I know it's still only 3x3 but this tool you're making here is far from basic so you do need this special crafting table."]
+			description: ["我知道这仍然只有3x3，但能在这里制作更多的物品，所以你确实需要这个特殊的工作台。"]
 			dependencies: ["546B73272169D585"]
 			id: "4BF32681611AC8BE"
 			tasks: [{
@@ -239,10 +239,10 @@
 			}]
 		}
 		{
-			title: "Barbecue on a Stick"
+			title: "木棍上的烧烤"
 			x: 14.0d
 			y: -5.0d
-			description: ["This will make a fantastic handle.  Don't think too hard about it."]
+			description: ["这会是一个极好的手柄，别想太多。"]
 			dependencies: ["4BF32681611AC8BE"]
 			id: "087AC1B28D317B4E"
 			tasks: [{
@@ -261,7 +261,7 @@
 			x: 15.5d
 			y: -5.0d
 			shape: "hexagon"
-			description: ["Use JEI to see how to make the Mattock.  Don't question my methods. Just make it for me. As a gift you get an even better pickaxe."]
+			description: ["使用JEI来查看鹤嘴锄的制作配方。不要质疑我的配方，做就完事了。你会得到一把更好的镐子作为礼物。"]
 			dependencies: [
 				"087AC1B28D317B4E"
 				"5DC00DC564F1266B"
@@ -315,10 +315,10 @@
 			]
 		}
 		{
-			title: "Coke Oven"
+			title: "焦炉"
 			x: 8.0d
 			y: -3.5d
-			description: ["Gather Sandstone x9, Clay x36, Brick x36 and make yourself some Coke Bricks. You're making a coke oven next."]
+			description: ["使用9个砂岩，36个黏土球和36红砖来制作一些焦炉砖。然后可以搭建一台焦炉。"]
 			hide_dependency_lines: true
 			dependencies: ["7FBA2A2906136819"]
 			id: "6A82515E757159AE"
@@ -335,11 +335,11 @@
 			}]
 		}
 		{
-			title: "Creosote Oil"
+			title: "杂酚油"
 			x: 15.5d
 			y: -3.5d
 			shape: "hexagon"
-			description: ["You get creosote as a byproduct of the coke oven's processes.  Right now you don't have access to coal to make coal coke so make charcoal out of logs in it instead."]
+			description: ["杂酚油是焦炉生产的副产物。现阶段，你无法使用煤炭来制作焦煤，因此需要使用原木烧木炭代替。"]
 			dependencies: ["2560D8535298958A"]
 			id: "780D190EE63444CF"
 			tasks: [{
@@ -379,10 +379,10 @@
 			]
 		}
 		{
-			title: "SumSum"
+			title: "嗡嗡嗡"
 			x: 8.0d
 			y: -2.0d
-			description: ["Get some bee spawn eggs from the market and craft a beehive.  Bees will seek out flowers and then return to the hive to work for a while increasing the honey level each time.  It would be smart to enclose your hive as the bees have a tendency to wander off."]
+			description: ["从市场中购买蜜蜂刷怪蛋并制作一个蜂箱。蜜蜂会寻找花朵，然后回到蜂箱工作一段时间，每次都会增加蜂蜜的量。把你的蜂箱围起来会是一个明智的选择，因为蜜蜂有到处乱逛的倾向。"]
 			hide_dependency_lines: true
 			dependencies: ["7FBA2A2906136819"]
 			id: "62138D3629083F80"
@@ -427,7 +427,7 @@
 		{
 			x: 10.0d
 			y: -2.0d
-			description: ["When the beehive has a honey level of 5 you can see the honey and it's time to harvest.  Use a bottle on the hive for honey or shears for honeycomb."]
+			description: ["当蜂箱中有5级的蜂蜜，是时候收获了。使用一个空瓶右键蜂箱来获取蜂蜜，或使用剪刀右键来获取蜜脾。"]
 			dependencies: ["62138D3629083F80"]
 			id: "6C0F0AC2DC6DB64B"
 			tasks: [{
@@ -455,10 +455,10 @@
 			]
 		}
 		{
-			title: "Cooking"
+			title: "烹饪"
 			x: 12.0d
 			y: -2.0d
-			description: ["Farmer's Delight adds a few new ingredients and a lot of new variety for your diet. Many of the recipes are prepared in the Cooking Pot placed over a Campfire or Stove. Add the necessary ingredients and it will begin cooking. Some recipes require bowls or other items to serve so keep some available when cooking."]
+			description: ["农夫乐事（Farmer's Delight）为你的饮食添加了一些新的原料和很多新的种类。很多配方都需要在营火或炉灶上的厨锅里制作。加入需要的食材它就会开始工作。一些配方需要碗或其他可以保存食物的容器，因此需要保证烹饪时有这些材料。"]
 			dependencies: ["6C0F0AC2DC6DB64B"]
 			id: "48523EEF46383DD3"
 			tasks: [{
@@ -482,7 +482,7 @@
 		{
 			x: 14.0d
 			y: -2.0d
-			description: ["Your world is a little small right now so you will have to culture your own mushrooms instead of foraging for them."]
+			description: ["现在你的世界有一点小，所以你必须要自己培养蘑菇而不是去寻找它们。"]
 			dependencies: ["48523EEF46383DD3"]
 			id: "14357143D9649B7A"
 			tasks: [{
@@ -497,11 +497,11 @@
 			}]
 		}
 		{
-			title: "Stuffed Pumpkin"
+			title: "填馅南瓜"
 			x: 15.5d
 			y: -2.0d
 			shape: "hexagon"
-			description: ["Feasts are big meals for sharing.  Once you've prepared the Stuffed Pumpkin place it in the world and right click on it with a bowl to take a serving. I've gotten hungry waiting for you so I'll take all 4 servings and the cookie is for dessert. Thank you!"]
+			description: ["盛宴是分享的大餐。一旦你准备好了填馅南瓜并将其放置在世界中，用碗右键它来获取一份碗装填馅南瓜。我已经在饥肠辘辘地等你，所以我会拿走全部的4份填馅南瓜加上一个曲奇作为点心。谢谢你！"]
 			dependencies: ["14357143D9649B7A"]
 			id: "6A20A5F4CC69C2BF"
 			tasks: [
@@ -531,12 +531,12 @@
 			}]
 		}
 		{
-			title: "Mining Dimension"
+			title: "采矿维度"
 			icon: "mining_dimension:teleporter"
 			x: 18.0d
 			y: -4.0d
 			shape: "diamond"
-			description: ["Now that you've prepared your supplies I've got the key you need. Find the sphere with the door that matches your key and place the key into the item frame on the door. There you'll find access to the Mining Dimension.  Go bring back some resources so that we can get started on the next set of keys."]
+			description: ["既然你准备好了东西，我有你需要的钥匙。找到与你的钥匙相匹配的门的岛屿，并将钥匙放入门上的物品框中。在那里可以访问挖掘维度。去拿些资源回来，这样我们就可以开始准备下一把钥匙了。"]
 			dependencies: [
 				"0528D0A23CF114E8"
 				"6A20A5F4CC69C2BF"
@@ -548,7 +548,7 @@
 			tasks: [{
 				id: "003D435F7849E975"
 				type: "checkmark"
-				title: "Find the Spruce"
+				title: "寻找云杉"
 			}]
 			rewards: [{
 				id: "06B8A9F82420CE99"
@@ -560,7 +560,7 @@
 			x: 15.0d
 			y: 1.5d
 			shape: "octagon"
-			description: ["This is the first of 15 different items you will need to make for my present.  You won't need it for a while but you probably want to think about automating the production of these materials."]
+			description: ["这是你为我制作礼物所需要的15种不同物品中的第一个。你暂时不需要它，但你可能想要考虑自动化来生产它所需的材料。"]
 			hide_dependency_lines: true
 			dependencies: ["7FBA2A2906136819"]
 			size: 3.0d
@@ -578,11 +578,11 @@
 			}]
 		}
 		{
-			title: "Automation Honey Production"
+			title: "自动化蜂蜜生产"
 			icon: "minecraft:observer"
 			x: 10.0d
 			y: -0.5d
-			description: ["There's an image in your questbook that suggests one possible way to automate your honey production.  Note: This design spits out bottles even when the hive is not full so be sure to collect them and return them to the dispenser."]
+			description: ["在你的任务书上有一张图片，这是一种自动化蜂蜜生产的建议。 注：这种设计即使在蜂箱不满的时候也会发射出瓶子，所以一定要收集瓶子并把它们送回发射器。"]
 			dependencies: ["6C0F0AC2DC6DB64B"]
 			id: "52549FA719C15D24"
 			tasks: [
@@ -616,12 +616,12 @@
 			}]
 		}
 		{
-			title: "Welcome"
+			title: "欢迎！"
 			icon: "minecraft:nether_star"
 			x: 1.0d
 			y: -9.0d
 			shape: "gear"
-			description: ["Welcome to Restrict Skyblock! This modpack completely changes the way you will get started in this world and progress to the different dimensions aiming for a new but not grindy progression. The questbook is accessible at all times in the upper left corner of the inventory screen and it is there to help you find your way."]
+			description: ["欢迎来到Restrict Skyblock整合包！这个整合包完全改变了你在这个世界中开始的方式，并逐步前往一个个不同的维度。每个维度都很新颖而且一点都不肝！任务书在物品栏界面的左上角，你可以随时访问它并帮助你找到方向。"]
 			size: 2.0d
 			id: "3B6D2237E53F2CD6"
 			tasks: [{
@@ -643,11 +643,11 @@
 			]
 		}
 		{
-			title: "Mining"
+			title: "采矿"
 			icon: "oneblock:obmaker"
 			x: 1.0d
 			y: -5.0d
-			description: ["Instead of the usual tree punching to get started I've given you a magically self renewing block to punch instead.  Find the OBMaker inside your chest and right click it on a block in the world to turn it into your OneBlock.  This can't be moved once placed."]
+			description: ["我已经给你一个神奇的自我更新方块来代替撸树的开局方式，在你旁边的箱子里找到起源方块生成器，在世界中的一个方块上右击它，把它变成起源方块（挖掘该方块以生成新方块）。一旦放置就不能更换位置。"]
 			dependencies: [
 				"0CAD397599E7C2A9"
 				"767E2E910DA4C6CA"
@@ -675,11 +675,11 @@
 			}]
 		}
 		{
-			title: "Goals"
+			title: "目标"
 			icon: "good_nights_sleep:present"
 			x: -1.0d
 			y: -7.0d
-			description: ["The point of it all: Make me a Present. A particular Present. If you look around you can see some islands off in the distance. Three of those have gateways to other dimensions that you will unlock by making certain items and fluids for me. Travelling to each dimension will grant you access to more and more varied resources and allow you to start making what you need to make my present. Let's begin!"]
+			description: ["所有一切的目标：做一个礼物！一个特别的礼物！如果你环视四周，你可以看见远处有一些岛屿。其中有三个岛屿上有通往其他维度的传送门，你需要为我制作特定的物品和流体来解锁那些传送门。前往每个维度将使你获得越来越多的各种资源，然后你就可以做我想要的礼物啦。让我们开始吧！"]
 			dependencies: ["3B6D2237E53F2CD6"]
 			id: "767E2E910DA4C6CA"
 			tasks: [{
@@ -693,17 +693,17 @@
 			}]
 		}
 		{
-			title: "Allies"
+			title: "同盟"
 			icon: "powah:charged_snowball"
 			x: 3.0d
 			y: -7.0d
-			description: ["Just Enough Items (JEI) is every modded Minecraft player's best ally. Search for nearly everything in the game and either left click to see how it's made or right click to see how it's used. The tabs above the recipes indicate different uses/recipes depending on the machine being used.  Press the 'A' key while hovering over any item to save that item to a list on the left side of the screen for easy access (hover and press 'A' over the item in the list to remove)."]
+			description: ["JEI（Just Enough Items）是每个MC模组玩家最好的盟友。你可以搜索游戏里几乎所有的物品，也可以左键查看这个物品的合成表，或右键查看这个物品的用途。配方上面的标签根据所使用的机器显示不同的用途/来源。当鼠标悬停在任何物品上时，按“A”键将该物品保存到屏幕左侧的列表中，方便您的访问（鼠标悬停并按“A”删除列表中的物品）。"]
 			dependencies: ["3B6D2237E53F2CD6"]
 			id: "0CAD397599E7C2A9"
 			tasks: [{
 				id: "634A8A9771A0EA3D"
 				type: "checkmark"
-				title: "your best ally"
+				title: "你最好的盟友"
 			}]
 			rewards: [{
 				id: "1CF8FC89EA8B72FF"
@@ -714,7 +714,7 @@
 		{
 			x: -2.0d
 			y: -5.0d
-			description: ["By now you may have noticed that you can't make the crafting bench.  That's okay because we have pretty special water around here.  Try throwing stuff in it and see what happens.  Or, I suppose you could look up how to use Water in JEI... Note: right click on Water, not Water Bucket to see the Fluid to Item recipes."]
+			description: ["到目前为止，你可能已经注意到你无法制作工作台。没关系，因为我们这里有很特别的水（挖掘起源方块有几率出现）。试着往里面扔东西，看看会发生什么。或者，我认为你可以去JEI看看水的用途... 注：右击水而不是水桶来查看流体到物品的配方。"]
 			dependencies: ["7C2E1C22BA7FDD2B"]
 			id: "3D67662F3AC7E879"
 			tasks: [{
@@ -738,7 +738,7 @@
 		{
 			x: 2.5d
 			y: -5.0d
-			description: ["Eating a wide variety of foods will increase your health pool.  When you start to get hungry you might want to make a cutting board and flint knife.  Using those will make your food supplies last longer and the bonemeal byproduct will be needed later."]
+			description: ["吃不同种类的食物会增加你的生命值。当你开始感到饿的时候，你可能愿意做一块砧板和一把燧石刀。使用这些来处理食物能供应你更长的时间，而且你以后会需要作为副产品的骨粉。"]
 			dependencies: ["7C2E1C22BA7FDD2B"]
 			id: "33E301A0D405E2E8"
 			tasks: [
@@ -777,7 +777,7 @@
 		{
 			x: -2.0d
 			y: -3.0d
-			description: ["That Clay bucket isn't good for anything as it is but you can't make a furnace without the crafting table.  I suppose you will need to go primitive and use a campfire for now."]
+			description: ["那个粘土桶没啥大用，但是你不能在没有工作台的情况下做熔炉，所以我们需要原始一点的手段，做一个篝火来使用。"]
 			dependencies: ["3D67662F3AC7E879"]
 			id: "7A464B80989521C2"
 			tasks: [{
@@ -794,7 +794,7 @@
 		{
 			x: -2.0d
 			y: -0.5d
-			description: ["Are you ready for a real crafting bench yet? I know you can't make red dye yet for the wool but if you look around you there should be a lovely red tulip you can use. **WARNING** Bonemeal on grass won't generate flowers on a new island until after a server restart. "]
+			description: ["你准备好买一个真正的工作台了吗？我知道你还不能为羊毛制作红色染料，但如果你看看你的周围，应该有一个可爱的红色郁金香，你可以采下它。 **警告**在你重进游戏之前，新生成的岛屿无法用骨粉催出花。"]
 			dependencies: ["7A464B80989521C2"]
 			id: "26A5DFB2E0DC95FB"
 			tasks: [{
@@ -809,10 +809,10 @@
 			}]
 		}
 		{
-			title: "Oak Log"
+			title: "橡木原木"
 			x: 1.0d
 			y: -0.5d
-			description: ["You just unlocked the path to untold riches and glory!  Well, maybe not, but here's where the bonemeal comes in: use it to buy yourself seeds and saplings and get that oak tree growing."]
+			description: ["你刚刚开启了通往无尽财富和荣耀的道路！好吧，也许不是，但这就是骨粉的作用：用它来买种子和树苗，让橡树生长。"]
 			dependencies: ["26A5DFB2E0DC95FB"]
 			id: "41B3842036C011A0"
 			tasks: [{
@@ -829,11 +829,11 @@
 			}]
 		}
 		{
-			title: "Sweet Dreams"
+			title: "香甜的梦"
 			icon: "minecraft:white_bed"
 			x: 4.0d
 			y: -5.0d
-			description: ["This is Minecraft, mobs will spawn at night.  You can hunt them, light up your island so you can't tell day from night, or you can sleep the night away."]
+			description: ["这里是Minecraft，怪物会在晚上出现。你可以猎杀它们，如果你不想看见他们，你可以在岛上插满火把，或者你可以在晚上睡个安稳觉。"]
 			dependencies: ["33E301A0D405E2E8"]
 			hide: true
 			hide_text_until_complete: false
@@ -858,10 +858,10 @@
 			]
 		}
 		{
-			title: "Hopper Botany Pot"
+			title: "漏式盆栽盆"
 			x: 4.0d
 			y: 1.0d
-			description: ["Farming the traditional way works just fine up here, but it does take up an awful lot of time and space.  It would be convenient if you could just set some pots on a containter and be able to work on other things while your storage fills up."]
+			description: ["传统的耕作方式在这说得过去，但它确实花费了大量的时间和空间。如果你能把一些盆栽放在箱子上，你就可以在你的储物空间装满之前做其他事情，这多方便呀！"]
 			dependencies: ["41B3842036C011A0"]
 			id: "7C64EF242FA6EBA7"
 			tasks: [{
@@ -892,7 +892,7 @@
 		{
 			x: 6.5d
 			y: 1.0d
-			description: ["Mystical Agriculture allows you to grow your resources and make customizable armor and tools.  It takes an awful lot of inferium though so I recommend getting your inferium supply established now. You can get some from killing or your OneBlock generator to get started."]
+			description: ["神秘农业（Mystical Agriculture）允许玩家种植资源并制作盔甲和工具。但这需要大量的下级精华，所以我建议你现在就建设你的下级精华供给。你可以得到一些下级精华从杀死怪物或者来自你的虚空造物机生成(需要方块催化剂groud_one)。"]
 			dependencies: ["7C64EF242FA6EBA7"]
 			id: "0BAB3360C3B7155E"
 			tasks: [{
@@ -915,7 +915,7 @@
 		{
 			x: 4.0d
 			y: -0.5d
-			description: ["By now you've been punching that OneBlock for quite a while. Maybe you even started using a shovel on it, tools help! But wouldn't it be nice if you didn't have to?"]
+			description: ["到目前为止，你已经挖掘起源方块很长时间了。也许你甚至开始用铲子帮忙！但如果你不用这么做不是更好吗？"]
 			dependencies: ["41B3842036C011A0"]
 			id: "2441BE4BCDA6512D"
 			tasks: [{
@@ -930,11 +930,11 @@
 			}]
 		}
 		{
-			title: "Automation"
+			title: "自动化"
 			icon: "oneblock:ex_nihilo"
 			x: 6.5d
 			y: -0.5d
-			description: ["With the help of some simple hoppers and high tech machines your days of block punching can be over. Craft the generator, place the hopper underneath it, put the catalysts you just received inside the generators and revel in the simplicity of your first resource automation."]
+			description: ["在一些简易的漏斗和高科技机器的帮助下，你挖掘方块的日子到头了。制作虚空造物机，把漏斗放在下面，把刚刚收到的催化剂放在发电机里，然后为你的第一个简单资源自动化狂欢吧。"]
 			dependencies: ["2441BE4BCDA6512D"]
 			id: "67B5F238E3F101E3"
 			tasks: [
@@ -977,11 +977,11 @@
 			]
 		}
 		{
-			title: "Smelting"
+			title: "烧炼"
 			icon: "minecraft:iron_ingot"
 			x: 6.5d
 			y: -2.0d
-			description: ["Once your generators have been running for a bit these will be abundant but redstone is still a ways off.  Here's a little to hold you over until you can get your own.  Note: If you waste some and need more redstone than you have to progress there is an emergency supply on the right side of the questbook."]
+			description: ["一旦你的虚空造物机运行了一段时间，资源就会很充裕，但距离获得红石仍然有一段距离。这里有一点红石可以让你继续发展，直到你能得到自己生产的。 注：如果你浪费了一些并且需要更多的红石来继续，那么任务书右侧有一个应急物品。"]
 			dependencies: ["67B5F238E3F101E3"]
 			id: "7337CCD2AD26072E"
 			tasks: [
@@ -1028,7 +1028,7 @@
 			icon: "pipez:item_pipe"
 			x: 6.5d
 			y: -3.5d
-			description: ["Pipes will help you with automating and connecting your resource generators to your central storage."]
+			description: ["管道将帮助您自动化连接资源生成的机器与中央存储的地方。"]
 			hide_dependency_lines: false
 			dependencies: ["7337CCD2AD26072E"]
 			id: "1302C391B7FBEF10"
@@ -1055,7 +1055,7 @@
 			icon: "storagedrawers:controller"
 			x: 6.5d
 			y: -5.0d
-			description: ["A nice and tidy Storage Drawer system will help you keep the chest monsters away now that the resources are flowing in."]
+			description: ["一个漂亮整洁的抽屉系统将帮助你在资源源源不断流入的情况下避免箱子爆满。"]
 			dependencies: ["1302C391B7FBEF10"]
 			id: "5BFEAE583573EE37"
 			tasks: [
@@ -1067,7 +1067,7 @@
 				{
 					id: "47C83DEDFF0CFB94"
 					type: "item"
-					title: "Any #storagedrawers:drawers"
+					title: "任何 #storagedrawers:drawers"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1098,11 +1098,11 @@
 			]
 		}
 		{
-			title: "Feeding Trough"
+			title: "饲养槽"
 			icon: "farmingforblockheads:feeding_trough"
 			x: 1.0d
 			y: 1.0d
-			description: ["Feeding troughs filled with carrots, wheat, and seeds will feed the animals around them helping your livestock multiply with minimal input from you.  The chicken nest collects eggs around it and a hopper or pipe can funnel the collected eggs into storage."]
+			description: ["装满胡萝卜、小麦和种子的饲养槽将喂饱周围的动物，帮助你的牲畜繁殖，而你只需很少的投入。鸡窝收集周围的鸡蛋，用漏斗或管道可以将收集到的鸡蛋送入仓库。"]
 			dependencies: ["41B3842036C011A0"]
 			id: "67A6AD450B3E826E"
 			tasks: [
@@ -1138,7 +1138,7 @@
 			}
 			x: -2.0d
 			y: 1.0d
-			description: ["If you punched your one block long enough you may have gotten it to spawn some animals for you.  Spawn eggs are available at the market to fill out your breeding pairs. NOTE: Killing animals with the flint knife vastly improves the rates for secondary drops like leather and ham."]
+			description: ["如果你挖掘你的起源方块足够多次，那么也许会生成一些动物，贸易站上可以买到生物刷怪蛋来增加你的繁殖配偶数量。 注：用燧石刀杀死动物可以大大提高皮革和火腿等的额外掉落的概率。"]
 			dependencies: ["67A6AD450B3E826E"]
 			id: "5475DBEB355577BB"
 			tasks: [
@@ -1176,10 +1176,10 @@
 			]
 		}
 		{
-			title: "Mystical White Petal"
+			title: "白色神秘花瓣"
 			x: 9.5d
 			y: -6.5d
-			description: ["Once you've found a mystical flower you can make all the petals you need.  Right click a petal on dirt or grass for a subtle sparkle effect.  Using bonemeal on that sparkle will grow a tall mystical flower.  Harvest the flower with shears and break it down into 4 petals."]
+			description: ["一旦你找到了一朵神秘花，你就可以做出你需要的更多同颜色的花瓣。用花瓣右键单击放置在泥土或草方块上可获得微妙的闪光效果。在闪光上使用骨粉将生长出一朵对应颜色的高神秘花。用剪刀收获花，把它分解成4片神秘花瓣。"]
 			dependencies: ["1C52F8E7402C44B0"]
 			id: "7395D4C17D0D69E6"
 			tasks: [{
@@ -1204,7 +1204,7 @@
 		{
 			x: 11.5d
 			y: -3.5d
-			description: ["Build a 3x3x3 cube in the world out of Coke Bricks and whack the center block on any side with the Engineer's Hammer to form the multiblock structure."]
+			description: ["用焦炉砖建造一个3x3x3的正方体，用工程师锤右击任意一侧的中心，形成多方块结构。"]
 			dependencies: ["6A82515E757159AE"]
 			id: "2560D8535298958A"
 			tasks: [{
