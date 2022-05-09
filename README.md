@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 -->
 # Restrict-Skyblock
 
-[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://gitee.com/ShaBaiTianCN/Restrict-Skyblock/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://github.com/ShaBaiTianCN/Restrict-Skyblock/blob/master/LICENSE)
 
 ## 仓库说明
 
