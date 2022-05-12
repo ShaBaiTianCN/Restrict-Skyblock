@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 5
 	filename: "chapter_3_image"
-	title: "第三章 \"指导图\""
+	title: "第三章“指导图”"
 	icon: "minecraft:painting"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

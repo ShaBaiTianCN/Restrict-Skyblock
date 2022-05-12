@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 0
 	filename: "chapter_1_mining_dimension"
-	title: "第一章 \"挖矿维度\""
+	title: "第一章“挖矿维度”"
 	icon: "mining_dimension:teleporter"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -714,7 +714,7 @@
 		{
 			x: -2.0d
 			y: -5.0d
-			description: ["到目前为止，你可能已经注意到你无法制作工作台。没关系，因为我们这里有很特别的水（挖掘起源方块有几率出现）。试着往里面扔东西，看看会发生什么。或者，我认为你可以去JEI看看水的用途...\n注：右击水而不是水桶来查看流体到物品的配方。"]
+			description: ["到目前为止，你可能已经注意到你无法制作工作台。没关系，因为我们这里有很特别的水（挖掘起源方块有几率出现）。试着往里面扔东西，看看会发生什么。或者，我认为你可以去JEI看看水的用途……\n注：右击水而不是水桶来查看流体到物品的配方。"]
 			dependencies: ["7C2E1C22BA7FDD2B"]
 			id: "3D67662F3AC7E879"
 			tasks: [{
@@ -892,7 +892,7 @@
 		{
 			x: 6.5d
 			y: 1.0d
-			description: ["神秘农业（Mystical_Agriculture）允许玩家种植资源并制作盔甲和工具。但这需要大量的下级精华，所以我建议你现在就建设你的下级精华供给。你可以得到一些下级精华从杀死怪物或者来自你的虚空造物机生成(需要方块催化剂groud_one)。"]
+			description: ["神秘农业（Mystical_Agriculture）允许玩家种植资源并制作盔甲和工具。但这需要大量的下级精华，所以我建议你现在就建设你的下级精华供给。你可以得到一些下级精华从杀死怪物或者来自你的虚空造物机生成（需要方块催化剂groud_one）。"]
 			dependencies: ["7C64EF242FA6EBA7"]
 			id: "0BAB3360C3B7155E"
 			tasks: [{
@@ -1067,7 +1067,7 @@
 				{
 					id: "47C83DEDFF0CFB94"
 					type: "item"
-					title: "任何 #storagedrawers:drawers"
+					title: "任意#storagedrawers:drawers"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b

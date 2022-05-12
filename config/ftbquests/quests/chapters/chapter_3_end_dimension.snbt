@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 4
 	filename: "chapter_3_end_dimension"
-	title: "第三章 \"末地维度\""
+	title: "第三章“末地维度”"
 	icon: "minecraft:end_portal_frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

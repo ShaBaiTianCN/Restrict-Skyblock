@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 2
 	filename: "chapter_2_nether_dimension"
-	title: "第二章 \"下界维度\""
+	title: "第二章“下界维度”"
 	icon: "minecraft:crying_obsidian"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -773,7 +773,7 @@
 		{
 			x: -27.0d
 			y: 7.5d
-			description: ["当你开始需要更多更高级的精华时，每种注魔水晶的1000可使用次数看起来就非常有限。这是一个很大的投资，但它会回报你能够在使用自动合成器变得便利，所以你将不再需要一组接着一组的合成了..."]
+			description: ["当你开始需要更多更高级的精华时，每种注魔水晶的1000可使用次数看起来就非常有限。这是一个很大的投资，但它会回报你能够在使用自动合成器变得便利，所以你将不再需要一组接着一组的合成了……"]
 			dependencies: ["74B9FFF2BD24E6DD"]
 			id: "1D49ACCBA05BCC16"
 			tasks: [{
@@ -1050,7 +1050,7 @@
 				{
 					id: "2C16B79432440E71"
 					type: "item"
-					title: "Any #minecraft:wooden_pressure_plates"
+					title: "任意#minecraft:wooden_pressure_plates"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
