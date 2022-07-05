@@ -1,9 +1,9 @@
 {
 	id: "4AEABFDFF0E8534A"
-	group: ""
-	order_index: 2
+	group: "785104582A739C24"
+	order_index: 0
 	filename: "chapter_2_nether_dimension"
-	title: "第二章“下界维度”"
+	title: "下界维度"
 	icon: "minecraft:crying_obsidian"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

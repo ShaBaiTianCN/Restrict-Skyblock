@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "16AE19B22F96AA18", title: "第一章" }
+		{ id: "785104582A739C24", title: "第二章" }
+		{ id: "6F20F3512F260BC5", title: "第三章" }
+		{ id: "22AF6A8F4164BA7D", title: "最终章" }
+	]
+}

@@ -1,17 +1,17 @@
 {
 	id: "10B38FCBB7A9F14E"
-	group: ""
+	group: "16AE19B22F96AA18"
 	order_index: 1
 	filename: "chapter_1_image"
-	title: "第一章“指导图”"
+	title: "指导图"
 	icon: "minecraft:painting"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
 		x: 0.0d
 		y: 0.0d
-		width: 17.0d
-		height: 10.0d
+		width: 42.0d
+		height: 30.0d
 		rotation: 0.0d
 		image: "modpack:textures/chapter_1_image.png"
 		hover: [ ]

@@ -1,9 +1,9 @@
 {
 	id: "3722A005FA65B15B"
-	group: ""
-	order_index: 4
+	group: "6F20F3512F260BC5"
+	order_index: 0
 	filename: "chapter_3_end_dimension"
-	title: "第三章“末地维度”"
+	title: "末地维度"
 	icon: "minecraft:end_portal_frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

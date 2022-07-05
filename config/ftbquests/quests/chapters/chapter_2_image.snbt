@@ -1,17 +1,17 @@
 {
 	id: "353C637FD420E575"
-	group: ""
-	order_index: 3
+	group: "785104582A739C24"
+	order_index: 1
 	filename: "chapter_2_image"
-	title: "第二章“指导图”"
+	title: "指导图"
 	icon: "minecraft:painting"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
 		x: -6.0d
 		y: -7.5d
-		width: 21.0d
-		height: 13.5d
+		width: 41.0d
+		height: 23.5d
 		rotation: 0.0d
 		image: "modpack:textures/background.png"
 		hover: [ ]

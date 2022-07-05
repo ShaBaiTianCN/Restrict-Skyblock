@@ -1,9 +1,9 @@
 {
 	id: "58C9279154D83B5A"
-	group: ""
+	group: "16AE19B22F96AA18"
 	order_index: 0
 	filename: "chapter_1_mining_dimension"
-	title: "第一章“挖矿维度”"
+	title: "挖矿维度"
 	icon: "mining_dimension:teleporter"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

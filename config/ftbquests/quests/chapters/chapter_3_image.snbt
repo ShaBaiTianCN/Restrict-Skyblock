@@ -1,17 +1,17 @@
 {
 	id: "21041B3D2F76DFEF"
-	group: ""
-	order_index: 5
+	group: "6F20F3512F260BC5"
+	order_index: 1
 	filename: "chapter_3_image"
-	title: "第三章“指导图”"
+	title: "指导图"
 	icon: "minecraft:painting"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
 		x: 0.0d
 		y: 0.0d
-		width: 27.0d
-		height: 16.0d
+		width: 47.0d
+		height: 26.0d
 		rotation: 0.0d
 		image: "modpack:textures/chapter_3_image.png"
 		hover: [ ]
