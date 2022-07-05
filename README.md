@@ -1,6 +1,7 @@
 <!-- markdownlint-disable MD033 -->
 # Restrict-Skyblock
 
+[![Restrict Skyblock](https://img.shields.io/badge/CurseForge-Restrict%20Skyblock-F16436)](https://www.curseforge.com/minecraft/modpacks/restrict-skyblock)
 [![Website](https://shields.io/website?up_message=anyijun.com&url=http://anyijun.com&label=Website)](http://anyijun.com)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue)](https://github.com/ShaBaiTianCN/Restrict-Skyblock/blob/master/LICENSE)
 [![Downloads](https://shields.io/github/downloads/ShaBaiTianCN/Restrict-Skyblock/total?label=Downloads)](https://github.com/ShaBaiTianCN/Restrict-Skyblock/releases)
